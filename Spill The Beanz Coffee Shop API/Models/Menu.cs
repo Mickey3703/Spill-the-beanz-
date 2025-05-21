@@ -10,7 +10,7 @@
         public int itemStock { get; set; }
         public int drinkQuantity { get; set; } 
 
-        //one menu has a collection of orders that create it
+        //one menu has a collection of orders 
         public ICollection<Orders> orders { get; set; }
     }
 }

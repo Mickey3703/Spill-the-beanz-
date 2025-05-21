@@ -8,5 +8,7 @@
         public string StaffEmail { get; set; }
         public string StaffRole { get ; set; }
 
+        public ICollection<Orders> Orders { get; set; } //many staff can handle many orders
+
     }
 }

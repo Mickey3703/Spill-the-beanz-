@@ -16,5 +16,7 @@
         public string OrderStatus;
         public DateTime OrderDate;
 
+        public ICollection<Staff> Staff { get; set; }
+
     }
 }

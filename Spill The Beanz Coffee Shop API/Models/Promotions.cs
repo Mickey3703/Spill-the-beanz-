@@ -7,6 +7,7 @@
         public string PromoDescription { get; set; }
         public string PromoStatus { get; set; }
         public int AdminId { get; set; }
-        public ICollection<Received_Promotions> ReceivedPromotions { get; set; }
+        public ICollection<Sent_Promotions> SentPromotions { get; set; }
+        public ICollection<Admins> Admins { get; set; } //Many promotions created by many admins
     }
 }

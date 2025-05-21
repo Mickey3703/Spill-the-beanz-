@@ -9,6 +9,6 @@
         public string customerEmail { get; set; }
         public string customerAddress { get; set; }
         public ICollection<Table_Reservations> tableReservations {  get; set; } //ok if same name accross classes? not neccessary to declare tb reservation in customers right?
-        public ICollection<Received_Promotions> receivedPromotions { get; set;
+        public ICollection<Sent_Promotions> receivedPromotions { get; set; }
     }
 }
