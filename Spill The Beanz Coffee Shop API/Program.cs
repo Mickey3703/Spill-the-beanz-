@@ -5,7 +5,7 @@ using Spill_The_Beanz_Coffee_Shop_API.Models; //the dbContext links to the Model
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<CoffeeDbContext>(opt => opt.UseInMemoryDatabase("Coffee Shop"));
+builder.Services.AddDbContext<CoffeeDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("DBConnection")));
 
 
 builder.Services.AddControllers();
