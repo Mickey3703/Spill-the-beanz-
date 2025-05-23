@@ -1,0 +1,99 @@
+.booking-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+  color: #3e2b1c;
+}
+
+.booking-main {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.booking-form {
+  flex: 1 1 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.booking-form h2 {
+  margin-bottom: 0.3rem;
+  font-size: 2.5rem;
+  color: rgb(43, 43, 43); 
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-split {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-split .form-row {
+  flex: 1;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #c97c5d;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.checkbox-row {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.btn-book {
+  align-self: start;
+  background: #c97c5d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.65rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-book:hover {
+  background: #a95a3e;
+}
+
+.booking-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .booking-main {
+    flex-direction: column;
+  }
+  .booking-image {
+    order: -1; 
+    margin-bottom: 1.5rem;
+  }
+  .form-split {
+    flex-direction: column;
+  }
+}
