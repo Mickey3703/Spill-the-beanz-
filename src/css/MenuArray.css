@@ -77,7 +77,7 @@
   text-align: center;
   transition: transform 0.3s ease;
   width: 100%;
-  max-width: 300px;
+  max-width: 260px;
   margin: 7px;
 }
 
@@ -88,8 +88,8 @@
 .menu-card img {
   width: 100%;
   height: auto;
-  max-height: 200px;
-  max-width: 200px;
+  max-height: 190px;
+  max-width: 190px;
   object-fit: cover;
 }
 
@@ -112,6 +112,16 @@
   margin: 2px 0;
   color: #333;
   display: inline;
+}
+
+.add-btn {
+  margin: 0.7rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  background: #513728;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0.6rem;
 }
 
 h2 {
@@ -149,6 +159,94 @@ h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
+}
+
+.main {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf8f3;
+}
+
+h2 {
+  color: #513728;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: antiquewhite;
+  border-radius: 10px;
+  box-shadow: 7px 7px 9px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 260px;
+  margin: 7px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  max-width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: #3e2f23;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #5c4a3a;
+  margin-bottom: 0.75rem;
+}
+
+.price {
+  margin: 0.75rem 0;
+}
+
+.price label {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #3e2f23;
+}
+
+.price select {
+  padding: 0.4rem 0.5rem;
+  margin-left: 0.3rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+.add-btn {
+  background-color: #513728;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: #3d2a1c;
 }
 
 /* Mobile tweaks */

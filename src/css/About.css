@@ -26,12 +26,18 @@
   color: #333;
 }
 
+.about-page p {
+  text-align: center;
+}
+
 .about-page ul {
   list-style-type: none;
   padding-left: 0;
+  text-align: center;
 }
 
 .team-list li {
+  text-align: center;
   margin: 1rem 0;
   padding: 1rem;
   background-color: #fafafa;
@@ -39,7 +45,6 @@
   box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .about-page .title {
     font-size: 2rem;

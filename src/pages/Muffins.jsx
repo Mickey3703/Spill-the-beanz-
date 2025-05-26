@@ -1,6 +1,8 @@
 import "../css/MenuArray.css";
 import "../css/navbar.css";
 import Navbar from "../components/Navbar";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 
 function Muffins({
   menuCard,
@@ -10,6 +12,7 @@ function Muffins({
   menuCard5,
   menuCard6,
 }) {
+  const { addItem } = useContext(CartContext);
   return (
     <div className="main">
       <h2>Menu</h2>
@@ -31,6 +34,12 @@ function Muffins({
             <div className="price">
               <p>{item.smallprice}</p>
             </div>
+            <button
+              className="add-btn"
+              onClick={() => addItem(item)}
+            >
+              Add&nbsp;to&nbsp;Cart
+            </button>
           </div>
         ))}
       </div>

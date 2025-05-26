@@ -32,7 +32,7 @@ function Header() {
     <>
       <div className="header">
         <button onClick={handlePromo}>Home</button>
-        <button onClick={handleOrder}>Your Order</button>
+        <button onClick={handleOrder}>Orders</button>
         <button onClick={handleBooking}>Reservation</button>
         <div className="headerLogo">
           <img src={logo} alt="Logo" width="400" height="350" />

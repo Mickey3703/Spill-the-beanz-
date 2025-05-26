@@ -23,7 +23,7 @@ export default function About() {
         <ul>
           <li>Roast the freshest African beans within 48 hours of serving.</li>
           <li>Support local farmers through direct-trade partnerships.</li>
-          <li>uild a welcoming, inclusive third place for our community.</li>
+          <li>Build a welcoming, inclusive third place for our community.</li>
           <li>Promote sustainable, seasonal, and zero-waste kitchen practices.</li>
         </ul>
 
