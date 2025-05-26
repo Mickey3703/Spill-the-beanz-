@@ -16,6 +16,6 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Models
     public string supplierInfo { get; set; }
     public int menuItemId { get; set; }
     [ForeignKey ("menuItemId")]
-    public Menu MenuId { get; set; }
+    public MenuItems MenuId { get; set; }
     }
 }

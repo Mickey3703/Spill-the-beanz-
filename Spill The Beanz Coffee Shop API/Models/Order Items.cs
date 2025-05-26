@@ -11,11 +11,11 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Models
         public int VariantId { get; set;}   
         public int Quantity { get; set; }
         public decimal UnitPrice { get; set; }
-        public string SpecialRequests { get; set; }
+        public string? SpecialRequests { get; set; }
         public string ItemStatus { get; set; }
-        public virtual Menu Item { get; set; } = null!;
+        public virtual MenuItems Item { get; set; } = null!;
         public virtual Orders Order { get; set; } = null!;
-        public virtual MenuItemVariants Variant { get; set; }
+        public virtual ItemVariants Variant { get; set; }
 
 
     }

@@ -3,128 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\dtos\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:dtos\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\controllers\\itemvariantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:controllers\\itemvariantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\spill the beanz coffee shop api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:spill the beanz coffee shop api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models\\admins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models\\admins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models\\menuitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models\\menuitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models\\tablereservations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models\\tablereservations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models\\itemvariants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models\\itemvariants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models\\order items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models\\order items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models\\menucategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models\\menucategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models\\customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\db context\\coffeedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:db context\\coffeedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models scaff\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models scaff\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models scaff\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models scaff\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models scaff\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models scaff\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models scaff\\itemvariant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models scaff\\itemvariant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models scaff\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models scaff\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models scaff\\customerpromotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models scaff\\customerpromotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models\\menu item variants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models\\menu item variants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models\\customerpromotions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models\\customerpromotions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models scaff\\tablereservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models scaff\\tablereservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models\\tables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models\\tables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models\\promotions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models\\promotions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models\\menu categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models\\menu categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models scaff\\cafetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models scaff\\cafetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models\\admins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models\\admins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models scaff\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models scaff\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\dtos\\customerdtoget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:dtos\\customerdtoget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\models scaff\\menucategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:models scaff\\menucategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|c:\\users\\sprinter 20\\onedrive - redacademy (pty) ltd\\documents\\projects\\spill the beanz 3 main\\spill-the-beanz-\\spill the beanz coffee shop api\\dtos\\customerdtop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8094D197-5406-4663-8821-1491D625271D}|Spill The Beanz Coffee Shop API.csproj|solutionrelative:dtos\\customerdtop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -134,277 +74,147 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MenuCategories.cs",
+              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\MenuCategories.cs",
+              "RelativeDocumentMoniker": "Models\\MenuCategories.cs",
+              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\MenuCategories.cs",
+              "RelativeToolTip": "Models\\MenuCategories.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T10:54:09.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Order Items.cs",
+              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Order Items.cs",
+              "RelativeDocumentMoniker": "Models\\Order Items.cs",
+              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Order Items.cs",
+              "RelativeToolTip": "Models\\Order Items.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T10:27:18.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuItems.cs",
+              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\MenuItems.cs",
+              "RelativeDocumentMoniker": "Models\\MenuItems.cs",
+              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\MenuItems.cs",
+              "RelativeToolTip": "Models\\MenuItems.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T10:25:22.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ItemVariants.cs",
+              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\ItemVariants.cs",
+              "RelativeDocumentMoniker": "Models\\ItemVariants.cs",
+              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\ItemVariants.cs",
+              "RelativeToolTip": "Models\\ItemVariants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T10:05:46.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CustomerDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\DTOs\\CustomerDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\CustomerDTO.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\DTOs\\CustomerDTO.cs",
-              "RelativeToolTip": "DTOs\\CustomerDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "Title": "ItemVariantsController.cs",
+              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Controllers\\ItemVariantsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ItemVariantsController.cs",
+              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Controllers\\ItemVariantsController.cs",
+              "RelativeToolTip": "Controllers\\ItemVariantsController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T09:55:14.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CustomerDTOP.cs",
+              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\DTOs\\CustomerDTOP.cs",
+              "RelativeDocumentMoniker": "DTOs\\CustomerDTOP.cs",
+              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\DTOs\\CustomerDTOP.cs",
+              "RelativeToolTip": "DTOs\\CustomerDTOP.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T05:29:43.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CustomerDTOGet.cs",
+              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\DTOs\\CustomerDTOGet.cs",
+              "RelativeDocumentMoniker": "DTOs\\CustomerDTOGet.cs",
+              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\DTOs\\CustomerDTOGet.cs",
+              "RelativeToolTip": "DTOs\\CustomerDTOGet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-25T14:10:39.78Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
               "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "Controllers\\OrdersController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAIwE8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAE8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-25T13:57:32.784Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "CustomersController.cs",
               "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Controllers\\CustomersController.cs",
               "RelativeDocumentMoniker": "Controllers\\CustomersController.cs",
               "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Controllers\\CustomersController.cs",
               "RelativeToolTip": "Controllers\\CustomersController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAawBYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-25T12:57:33.332Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "TableReservation.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\TableReservation.cs",
-              "RelativeDocumentMoniker": "Models Scaff\\TableReservation.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\TableReservation.cs",
-              "RelativeToolTip": "Models Scaff\\TableReservation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T11:56:11.666Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Promotion.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\Promotion.cs",
-              "RelativeDocumentMoniker": "Models Scaff\\Promotion.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\Promotion.cs",
-              "RelativeToolTip": "Models Scaff\\Promotion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T11:56:05.081Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "OrderItem.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\OrderItem.cs",
-              "RelativeDocumentMoniker": "Models Scaff\\OrderItem.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\OrderItem.cs",
-              "RelativeToolTip": "Models Scaff\\OrderItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T11:55:23.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\Order.cs",
-              "RelativeDocumentMoniker": "Models Scaff\\Order.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\Order.cs",
-              "RelativeToolTip": "Models Scaff\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T11:55:16.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "MenuItem.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\MenuItem.cs",
-              "RelativeDocumentMoniker": "Models Scaff\\MenuItem.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\MenuItem.cs",
-              "RelativeToolTip": "Models Scaff\\MenuItem.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAgwB4AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T11:55:11.008Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "MenuCategory.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\MenuCategory.cs",
-              "RelativeDocumentMoniker": "Models Scaff\\MenuCategory.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\MenuCategory.cs",
-              "RelativeToolTip": "Models Scaff\\MenuCategory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T11:55:07.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ItemVariant.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\ItemVariant.cs",
-              "RelativeDocumentMoniker": "Models Scaff\\ItemVariant.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\ItemVariant.cs",
-              "RelativeToolTip": "Models Scaff\\ItemVariant.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T11:55:03.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Inventory.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\Inventory.cs",
-              "RelativeDocumentMoniker": "Models Scaff\\Inventory.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\Inventory.cs",
-              "RelativeToolTip": "Models Scaff\\Inventory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T11:54:58.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CustomerPromotion.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\CustomerPromotion.cs",
-              "RelativeDocumentMoniker": "Models Scaff\\CustomerPromotion.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\CustomerPromotion.cs",
-              "RelativeToolTip": "Models Scaff\\CustomerPromotion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T11:54:44.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "CafeTable.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\CafeTable.cs",
-              "RelativeDocumentMoniker": "Models Scaff\\CafeTable.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models Scaff\\CafeTable.cs",
-              "RelativeToolTip": "Models Scaff\\CafeTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T11:54:12.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Order Items.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Order Items.cs",
-              "RelativeDocumentMoniker": "Models\\Order Items.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Order Items.cs",
-              "RelativeToolTip": "Models\\Order Items.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T10:28:11.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Tables.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Tables.cs",
-              "RelativeDocumentMoniker": "Models\\Tables.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Tables.cs",
-              "RelativeToolTip": "Models\\Tables.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T09:20:19.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TableReservations.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\TableReservations.cs",
-              "RelativeDocumentMoniker": "Models\\TableReservations.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\TableReservations.cs",
-              "RelativeToolTip": "Models\\TableReservations.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABUAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:30:45.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Inventory.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Inventory.cs",
-              "RelativeDocumentMoniker": "Models\\Inventory.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Inventory.cs",
-              "RelativeToolTip": "Models\\Inventory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:58:48.216Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Menu Item Variants.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Menu Item Variants.cs",
-              "RelativeDocumentMoniker": "Models\\Menu Item Variants.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Menu Item Variants.cs",
-              "RelativeToolTip": "Models\\Menu Item Variants.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:52:37.848Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Menu Categories.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Menu Categories.cs",
-              "RelativeDocumentMoniker": "Models\\Menu Categories.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Menu Categories.cs",
-              "RelativeToolTip": "Models\\Menu Categories.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T08:44:57.156Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-05-21T19:41:01.36Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T09:19:14.092Z",
               "EditorCaption": ""
@@ -417,79 +227,40 @@
               "RelativeDocumentMoniker": "DB Context\\CoffeeDbContext.cs",
               "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\DB Context\\CoffeeDbContext.cs",
               "RelativeToolTip": "DB Context\\CoffeeDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T13:28:50.006Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Spill The Beanz Coffee Shop API.csproj",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Spill The Beanz Coffee Shop API.csproj",
-              "RelativeDocumentMoniker": "Spill The Beanz Coffee Shop API.csproj",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Spill The Beanz Coffee Shop API.csproj",
-              "RelativeToolTip": "Spill The Beanz Coffee Shop API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-19T13:27:46.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "CustomerPromotions.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\CustomerPromotions.cs",
-              "RelativeDocumentMoniker": "Models\\CustomerPromotions.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\CustomerPromotions.cs",
-              "RelativeToolTip": "Models\\CustomerPromotions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T13:16:40.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Orders.cs",
               "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Orders.cs",
               "RelativeDocumentMoniker": "Models\\Orders.cs",
               "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Orders.cs",
               "RelativeToolTip": "Models\\Orders.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwBoAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T13:14:05.3Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Menu.cs",
-              "RelativeDocumentMoniker": "Models\\Menu.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Menu.cs",
-              "RelativeToolTip": "Models\\Menu.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBQAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T13:13:36.533Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 10,
               "Title": "Promotions.cs",
               "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Promotions.cs",
               "RelativeDocumentMoniker": "Models\\Promotions.cs",
               "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Promotions.cs",
               "RelativeToolTip": "Models\\Promotions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAYwBQAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAA8wCoAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T13:11:16.185Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "Admins.cs",
               "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Admins.cs",
               "RelativeDocumentMoniker": "Models\\Admins.cs",
@@ -502,39 +273,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T13:03:46.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\WeatherForecast.cs",
-              "RelativeToolTip": "WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T12:58:32.254Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Customers.cs",
               "DocumentMoniker": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Customers.cs",
               "RelativeDocumentMoniker": "Models\\Customers.cs",
               "ToolTip": "C:\\Users\\Sprinter 20\\OneDrive - redAcademy (Pty) Ltd\\Documents\\Projects\\Spill The Beanz 3 MAIN\\Spill-the-beanz-\\Spill The Beanz Coffee Shop API\\Models\\Customers.cs",
               "RelativeToolTip": "Models\\Customers.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCIAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T12:59:55.737Z",
               "EditorCaption": ""

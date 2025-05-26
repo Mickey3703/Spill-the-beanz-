@@ -40,10 +40,10 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Models
         public string OrderStatus { get; set; }
 
         [Column("special_instructions")]
-        public string SpecialInstructions { get; set; }
+        public string? SpecialInstructions { get; set; }
 
         [Column("reservation_id")]
-        public int ReservationId { get; set; }
+        public int? ReservationId { get; set; }
         public virtual Customers Customer { get; set; }
 
         public virtual ICollection<OrderItems> OrderItems { get; set; } = new List<OrderItems>();

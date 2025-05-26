@@ -18,7 +18,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Customers"
+                    "$ref": "#/components/schemas/CustomerDTOGet"
                   }
                 }
               },
@@ -26,7 +26,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Customers"
+                    "$ref": "#/components/schemas/CustomerDTOGet"
                   }
                 }
               },
@@ -34,7 +34,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Customers"
+                    "$ref": "#/components/schemas/CustomerDTOGet"
                   }
                 }
               }
@@ -50,17 +50,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CustomerDTO"
+                "$ref": "#/components/schemas/CustomerDTOP"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CustomerDTO"
+                "$ref": "#/components/schemas/CustomerDTOP"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CustomerDTO"
+                "$ref": "#/components/schemas/CustomerDTOP"
               }
             }
           }
@@ -111,17 +111,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/CustomerDTO"
+                  "$ref": "#/components/schemas/CustomerDTOGet"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CustomerDTO"
+                  "$ref": "#/components/schemas/CustomerDTOGet"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CustomerDTO"
+                  "$ref": "#/components/schemas/CustomerDTOGet"
                 }
               }
             }
@@ -147,17 +147,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Customers"
+                "$ref": "#/components/schemas/CustomerDTOP"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Customers"
+                "$ref": "#/components/schemas/CustomerDTOP"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Customers"
+                "$ref": "#/components/schemas/CustomerDTOP"
               }
             }
           }
@@ -171,6 +171,191 @@
       "delete": {
         "tags": [
           "Customers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ItemVariants": {
+      "get": {
+        "tags": [
+          "ItemVariants"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ItemVariants"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ItemVariants"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ItemVariants"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ItemVariants"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemVariants"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemVariants"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemVariants"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ItemVariants"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ItemVariants"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ItemVariants"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ItemVariants/{id}": {
+      "get": {
+        "tags": [
+          "ItemVariants"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ItemVariants"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ItemVariants"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ItemVariants"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ItemVariants"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemVariants"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemVariants"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemVariants"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ItemVariants"
         ],
         "parameters": [
           {
@@ -454,7 +639,7 @@
         },
         "additionalProperties": false
       },
-      "CustomerDTO": {
+      "CustomerDTOGet": {
         "type": "object",
         "properties": {
           "customerName": {
@@ -469,11 +654,37 @@
             "type": "string",
             "nullable": true
           },
-          "passwordHash": {
+          "address": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CustomerDTOP": {
+        "type": "object",
+        "properties": {
+          "customerID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "customerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
             "type": "string",
             "nullable": true
           },
           "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "passwordHash": {
             "type": "string",
             "nullable": true
           }
@@ -583,70 +794,15 @@
         },
         "additionalProperties": false
       },
-      "Menu": {
-        "type": "object",
-        "properties": {
-          "menuItemID": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "itemName": {
-            "type": "string",
-            "nullable": true
-          },
-          "itemDescription": {
-            "type": "string",
-            "nullable": true
-          },
-          "itemPrice": {
-            "type": "number",
-            "format": "double"
-          },
-          "isAvailable": {
-            "type": "boolean"
-          },
-          "isFeatured": {
-            "type": "boolean"
-          },
-          "imageUrl": {
-            "type": "string",
-            "nullable": true
-          },
-          "categoryId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "menuCategories": {
-            "$ref": "#/components/schemas/Menu_Categories"
-          },
-          "orders": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Orders"
-            },
-            "nullable": true
-          },
-          "menuItemsVariant": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/MenuItemVariants"
-            },
-            "nullable": true
-          },
-          "promotions": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Promotions"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "MenuItemVariants": {
+      "ItemVariants": {
         "type": "object",
         "properties": {
           "variantId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "itemId": {
             "type": "integer",
             "format": "int32"
           },
@@ -661,20 +817,23 @@
           "isDefault": {
             "type": "boolean"
           },
-          "menuItems": {
+          "item": {
+            "$ref": "#/components/schemas/MenuItems"
+          },
+          "orderItems": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Menu"
+              "$ref": "#/components/schemas/OrderItems"
             },
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "Menu_Categories": {
+      "MenuCategories": {
         "type": "object",
         "properties": {
-          "categoryId": {
+          "categoryID": {
             "type": "integer",
             "format": "int32"
           },
@@ -682,7 +841,7 @@
             "type": "string",
             "nullable": true
           },
-          "catergoryDescription": {
+          "description": {
             "type": "string",
             "nullable": true
           },
@@ -690,8 +849,75 @@
             "type": "integer",
             "format": "int32"
           },
-          "is_active": {
+          "isActive": {
             "type": "boolean"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MenuItems"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MenuItems": {
+        "type": "object",
+        "properties": {
+          "itemId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "menuCategoryId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "itemName": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "basePrice": {
+            "type": "number",
+            "format": "double"
+          },
+          "isAvailable": {
+            "type": "boolean"
+          },
+          "isFeatured": {
+            "type": "boolean"
+          },
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "menuCategory": {
+            "$ref": "#/components/schemas/MenuCategories"
+          },
+          "itemsVariant": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ItemVariants"
+            },
+            "nullable": true
+          },
+          "orders": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Orders"
+            },
+            "nullable": true
+          },
+          "promotions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Promotions"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -732,13 +958,13 @@
             "nullable": true
           },
           "item": {
-            "$ref": "#/components/schemas/Menu"
+            "$ref": "#/components/schemas/MenuItems"
           },
           "order": {
             "$ref": "#/components/schemas/Orders"
           },
           "variant": {
-            "$ref": "#/components/schemas/MenuItemVariants"
+            "$ref": "#/components/schemas/ItemVariants"
           }
         },
         "additionalProperties": false
@@ -796,7 +1022,8 @@
           },
           "reservationId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           },
           "customer": {
             "$ref": "#/components/schemas/Customers"
@@ -827,6 +1054,10 @@
           "promoID": {
             "type": "string",
             "nullable": true
+          },
+          "adminID": {
+            "type": "integer",
+            "format": "int32"
           },
           "promoName": {
             "type": "string",
@@ -868,10 +1099,6 @@
             "type": "string",
             "format": "date-time"
           },
-          "adminId": {
-            "type": "integer",
-            "format": "int32"
-          },
           "sentPromotions": {
             "type": "array",
             "items": {
@@ -889,7 +1116,7 @@
           "menuItems": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Menu"
+              "$ref": "#/components/schemas/MenuItems"
             },
             "nullable": true
           }
