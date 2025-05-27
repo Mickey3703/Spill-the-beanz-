@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
 import LoginForm from './LoginForm';
-import RegisterForm from './RegisterForm';
-import OrdersPage from './Orders';
+import AdminOrders from './Orders';
 import ReservationTable from './Reservations';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+import AdminMenu from './MenuAdmin';
 
 function App() {
   return (
@@ -13,9 +13,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<LoginForm />} />
-        <Route path="/register" element={<RegisterForm />} />
-        <Route path="/orders" element={<OrdersPage />} />
+        <Route path="/orders" element={<AdminOrders />} />
         <Route path="/booking" element={<ReservationTable />} />
+        <Route path="/menu" element={<AdminMenu />} />
       </Routes>
 
       <Footer />

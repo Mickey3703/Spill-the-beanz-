@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'; //store and change data  and
 
 
 //component to display orders table
-function OrdersTable({ endpoint }) {
+function AdminOrders({ endpoint }) {
   const [orders, setOrders] = useState([]);
 
   //function to fetch orders from backend API
@@ -58,7 +58,7 @@ function OrdersTable({ endpoint }) {
 };
 
 //parent component to handle tabs and switch between order types
-export default function OrdersPage() {
+export default function AdminOrders() {
   const [activeTab, setActiveTab] = useState("online");         //online or instore orders
 
   return (
