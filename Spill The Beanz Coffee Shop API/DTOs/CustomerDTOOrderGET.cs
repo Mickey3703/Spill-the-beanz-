@@ -3,7 +3,7 @@ using CSMS_Trial.DTOs;
 
 namespace Spill_The_Beanz_Coffee_Shop_API.DTOs
 {
-    public class CustomerDTOGet //should have customer id
+    public class CustomerDTOOrderGET //should have customer id
     {
         public string CustomerName { get; set; }
         public string Email { get; set; }

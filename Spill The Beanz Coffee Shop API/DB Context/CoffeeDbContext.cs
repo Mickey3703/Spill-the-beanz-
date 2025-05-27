@@ -17,6 +17,8 @@ namespace Spill_The_Beanz_Coffee_Shop_API.DB_Context
         public DbSet<Orders> Orders { get; set; } = null;
         public DbSet<ItemVariants> ItemVariants { get; set; } = default!; //deafult? null?
         public DbSet<MenuCategories> Categories { get; set; } = null!;
+        public DbSet<Tables> Tables { get; set; } = null!;
+        public DbSet<TableReservations> TableReservations { get; set; } = null!;
 
     }
 }

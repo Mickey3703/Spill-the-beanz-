@@ -18,7 +18,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp", policy =>
     {
-        policy.WithOrigins("http///////")
+        policy.WithOrigins("http://10.150.5.19:3000")
         .AllowAnyMethod()
         .AllowAnyHeader();
     });
@@ -26,7 +26,7 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddControllers()
     .AddJsonOptions(options => {
-        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve; //need namespace
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles; //need namespace
     });
 
 //builder.Services.AddControllers()

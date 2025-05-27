@@ -26,27 +26,61 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Controllers
         }
 
         // GET: api/Customers <-- this is the endpoint. User clicks link/button
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<CustomerDTOGet>>> GetCustomerList()
-        {
-            var customers = await _context.Customers.ToListAsync(); //retrieving all rows from DB
+        //[HttpGet]
+        //public async Task<ActionResult<IEnumerable<CustomerDTOGet>>> GetCustomerList()
+        //{
+        //    var customers = await _context.Customers.ToListAsync(); //retrieving all rows from DB
 
-            if (customers == null) {
+        //    if (customers == null) {
 
-                return NotFound(); }
+        //        return NotFound(); }
 
 
-            var dto = customers.Select(customers => new CustomerDTOGet() //Selects all the rows, goes through each one, and maps each one (object) to the DTO. >= maps. select(parameter name)
-            {
-                CustomerName = customers.CustomerName,
-                Email = customers.Email,
-                PhoneNumber = customers.PhoneNumber,
-                Address = customers.Address
-            }).ToList(); //turns objexts into a new list
+        //    var dto = customers.Select(customers => new CustomerDTOGet() //Selects all the rows, goes through each one, and maps each one (object) to the DTO. >= maps. select(parameter name)
+        //    {
+        //        CustomerName = customers.CustomerName,
+        //        Email = customers.Email,
+        //        PhoneNumber = customers.PhoneNumber,
+        //        Address = customers.Address
+        //    }).ToList(); //turns objexts into a new list
 
-            return Ok(dto);
+        //    return Ok(dto);
 
             
+        //}
+
+        [HttpGet] //customerOrders
+        public async Task<ActionResult<List<CustomerDTOOrderGET>>> GetCustomerOrderList()
+        {
+            var customerOrders = await _context.Customers
+                .Include(customer => customer.Orders) //include from orders table
+                .ThenInclude(Orders => Orders.OrderItems)
+                .ThenInclude(orderItem => orderItem.Item)
+                .Select(customer => new CustomerDTOOrderGET
+                {
+                    CustomerName = customer.CustomerName,
+                    Email = customer.Email,
+                    PhoneNumber = customer.PhoneNumber,
+                    Address = customer.Address,
+                    Orders = customer.Orders.Select(Orders => new CSMS_Trial.DTOs.OrderDto
+                    {
+                        OrderId = Orders.OrderId,
+                        OrderItems = Orders.OrderItems.Select(OrderItems => OrderItems.Item.ItemName).ToList(),
+                        OrderStatus = Orders.OrderStatus,
+                        FinalAmount = Orders.FinalAmount
+                    }).ToList()
+                })//retrieving all rows from DB
+                    .ToListAsync();       
+
+            if (customerOrders == null)
+            {
+
+                return NotFound();
+            }
+
+            return Ok(customerOrders);
+
+
         }
 
         // GET: api/Customers/{id}
