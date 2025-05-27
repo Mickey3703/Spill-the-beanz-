@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.headerLogo {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  height: 320px;
+  width: 250px;
+}
+
+
+.header button {
+  background-color: #FFF7ED;
+  color: #4B2E1E;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  margin: 8px;
+  font-family: 'Allura', cursive;
+  padding: 5px 5px;
+  height: 150px;
+  width: 150px;
+  border-radius: 0.8rem;
+}
+
+.header button:hover {
+  background-color: #E6C8A0; 
+  color: #3E2B1C; 
+}
+
+.header button.active {
+  background-color: #E6C8A0; 
+  color: #3E2B1C;
+}
+
+footer {
+  background-color: #FFF7ED;
+  color: #4B2E1E;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
