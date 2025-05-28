@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Azure;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -11,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Spill_The_Beanz_Coffee_Shop_API.DB_Context;
 using Spill_The_Beanz_Coffee_Shop_API.DTOs;
 using Spill_The_Beanz_Coffee_Shop_API.Models;
+using static NuGet.Packaging.PackagingConstants;
 
 namespace Spill_The_Beanz_Coffee_Shop_API.Controllers
 {
@@ -68,49 +70,76 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Controllers
                 return NotFound();
             }
 
-            return tableReservations;
+            var customersRes = await _context.Customers //using the Customers as the base
+             .Include(customer => customer.TableReservations) //use the tableres property in there
+             .ThenInclude(customerRes => customerRes.Customers)
+             .Select(customer => new CustomerDTORes()
+             { //create new DTO object of customer. so only certain data is seen. 
+
+                 CustomerName = customer.CustomerName,
+                 Email = customer.Email,
+                 PhoneNumber = customer.PhoneNumber,
+                 TableReservations = customer.TableReservations.Select(TableRes => new TableResDTO
+                 {
+                     ReservationId = TableRes.ReservationId,
+                     CustomerId = TableRes.CustomerId,
+                     tableId = TableRes.tableId,
+                     ReservationDate = TableRes.ReservationDate,
+                     start_time = TableRes.start_time,
+                     end_time = TableRes.end_time,
+                     SeatsNumbers = TableRes.SeatsNumbers,
+                     specialRequests = TableRes.specialRequests,
+                     ReservationStatus = TableRes.ReservationStatus
+
+                 }).ToList()
+
+
+             }).ToListAsync();
+
+            return Ok(customersRes);
         }
 
         // PUT: api/TableReservations/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutTableReservations(int id, TableReservations tableReservations)
-        {
-            if (id != tableReservations.ReservationId)
-            {
-                return BadRequest();
-            }
+        //[HttpPut("{id}")]
+        //public async Task<IActionResult> PutTableReservations(int id, TableReservations tableReservations)
+        //{
+        //    if (id != tableReservations.ReservationId)
+        //    {
+        //        return BadRequest();
+        //    }
 
-            _context.Entry(tableReservations).State = EntityState.Modified;
+        //    _context.Entry(tableReservations).State = EntityState.Modified;
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!TableReservationsExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+        //    try
+        //    {
+        //        await _context.SaveChangesAsync();
+        //    }
+        //    catch (DbUpdateConcurrencyException)
+        //    {
+        //        if (!TableReservationsExists(id))
+        //        {
+        //            return NotFound();
+        //        }
+        //        else
+        //        {
+        //            throw;
+        //        }
+        //    }
 
-            return NoContent();
-        }
+        //    return NoContent();
+        //}
 
         // POST: api/TableReservations
-        [HttpPost]
-        public async Task<ActionResult<TableReservations>> PostTableReservations(TableReservations tableReservations)
-        {
-            _context.TableReservations.Add(tableReservations);
-            await _context.SaveChangesAsync();
+        //[Authorize]
+        //[HttpPost]
+        //public async Task<ActionResult<TableReservations>> PostTableReservations(TableReservations tableReservations)
+        //{
+        //    _context.TableReservations.Add(tableReservations);
+        //    await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetTableReservations", new { id = tableReservations.ReservationId }, tableReservations);
-        }
+        //    return CreatedAtAction("GetTableReservations", new { id = tableReservations.ReservationId }, tableReservations);
+        //}
 
         [HttpPatch("{id}")]
         public async Task<ActionResult<TableReservations>>PatchTableReservationStatus(int id, JsonPatchDocument<TableResDTO> patchDoc) //you patch the DTO but you're returning back to the model
@@ -151,12 +180,10 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Controllers
                     if (!TableReservationsExists(id))
                              { return NotFound(); 
                 }
-
                    else
                    {
                        throw;
                    }
-
               }
               return NoContent();
         }

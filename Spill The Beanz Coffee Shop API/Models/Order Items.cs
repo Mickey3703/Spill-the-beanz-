@@ -15,13 +15,10 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Models
         [Column("item_id")]
         public int ItemId { get; set;}
 
-        [Column("variant_id")]
-        public int VariantId { get; set;}
-
         [Column("quantity")]
         public int Quantity { get; set; }
 
-        [Column("unit_price")]
+        [Column("unit_price")] //remove pls?
         public decimal UnitPrice { get; set; }
 
         [Column("special_requests")]
@@ -29,11 +26,11 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Models
 
         [Column("item_status")]
         public string ItemStatus { get; set; }
-
-        public virtual MenuItems Item { get; set; } = null!;
+        [ForeignKey("ItemId")]
+        [InverseProperty("OrderItems")]
+        public virtual Menu Item { get; set; } = null!;
         [ForeignKey("OrderId")]
         public virtual Orders Order { get; set; } = null!;
-        public virtual ItemVariants Variant { get; set; }
 
 
     }

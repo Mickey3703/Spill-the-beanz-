@@ -18,7 +18,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/CustomerDTOGet"
+                    "$ref": "#/components/schemas/CustomerDTOOrderGET"
                   }
                 }
               },
@@ -26,7 +26,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/CustomerDTOGet"
+                    "$ref": "#/components/schemas/CustomerDTOOrderGET"
                   }
                 }
               },
@@ -34,8 +34,59 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/CustomerDTOGet"
+                    "$ref": "#/components/schemas/CustomerDTOOrderGET"
                   }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Customers"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomerDTOP"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomerDTOP"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomerDTOP"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomerDTOP"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Customers"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Customers"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Customers"
                 }
               }
             }
@@ -82,6 +133,51 @@
           }
         }
       },
+      "put": {
+        "tags": [
+          "Customers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomerDTOP"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomerDTOP"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomerDTOP"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomerDTOP"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "patch": {
         "tags": [
           "Customers"
@@ -161,10 +257,10 @@
         }
       }
     },
-    "/api/MenuItems": {
+    "/api/ItemVariants": {
       "get": {
         "tags": [
-          "MenuItems"
+          "ItemVariants"
         ],
         "responses": {
           "200": {
@@ -174,7 +270,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/MenuDTOGET"
+                    "$ref": "#/components/schemas/ItemVariants"
                   }
                 }
               },
@@ -182,7 +278,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/MenuDTOGET"
+                    "$ref": "#/components/schemas/ItemVariants"
                   }
                 }
               },
@@ -190,8 +286,59 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/MenuDTOGET"
+                    "$ref": "#/components/schemas/ItemVariants"
                   }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ItemVariants"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemVariants"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemVariants"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemVariants"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemVariants"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ItemVariants"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ItemVariants"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ItemVariants"
                 }
               }
             }
@@ -199,10 +346,10 @@
         }
       }
     },
-    "/api/MenuItems/{id}": {
+    "/api/ItemVariants/{id}": {
       "get": {
         "tags": [
-          "MenuItems"
+          "ItemVariants"
         ],
         "parameters": [
           {
@@ -221,26 +368,71 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Menu"
+                  "$ref": "#/components/schemas/ItemVariants"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Menu"
+                  "$ref": "#/components/schemas/ItemVariants"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Menu"
+                  "$ref": "#/components/schemas/ItemVariants"
                 }
               }
             }
           }
         }
       },
+      "put": {
+        "tags": [
+          "ItemVariants"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemVariants"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemVariants"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemVariants"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemVariants"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "delete": {
         "tags": [
-          "MenuItems"
+          "ItemVariants"
         ],
         "parameters": [
           {
@@ -273,7 +465,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/CustomerDTOOrderGET"
+                    "$ref": "#/components/schemas/Orders"
                   }
                 }
               },
@@ -281,7 +473,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/CustomerDTOOrderGET"
+                    "$ref": "#/components/schemas/Orders"
                   }
                 }
               },
@@ -289,7 +481,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/CustomerDTOOrderGET"
+                    "$ref": "#/components/schemas/Orders"
                   }
                 }
               }
@@ -305,29 +497,46 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/OrdersDTOP"
+                "$ref": "#/components/schemas/Orders"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/OrdersDTOP"
+                "$ref": "#/components/schemas/Orders"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/OrdersDTOP"
+                "$ref": "#/components/schemas/Orders"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/OrdersDTOP"
+                "$ref": "#/components/schemas/Orders"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Orders"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Orders"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Orders"
+                }
+              }
+            }
           }
         }
       }
@@ -371,7 +580,7 @@
           }
         }
       },
-      "patch": {
+      "put": {
         "tags": [
           "Orders"
         ],
@@ -390,58 +599,29 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/Operation"
-                }
+                "$ref": "#/components/schemas/Orders"
               }
             },
             "application/json": {
               "schema": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/Operation"
-                }
+                "$ref": "#/components/schemas/Orders"
               }
             },
             "text/json": {
               "schema": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/Operation"
-                }
+                "$ref": "#/components/schemas/Orders"
               }
             },
             "application/*+json": {
               "schema": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/Operation"
-                }
+                "$ref": "#/components/schemas/Orders"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Orders"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Orders"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Orders"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
@@ -463,59 +643,6 @@
         "responses": {
           "200": {
             "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Payments": {
-      "post": {
-        "tags": [
-          "Payments"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Payments"
-              }
-            },
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Payments"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Payments"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Payments"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Payments"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Payments"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Payments"
-                }
-              }
-            }
           }
         }
       }
@@ -551,6 +678,57 @@
                   "items": {
                     "$ref": "#/components/schemas/CustomerDTORes"
                   }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TableReservations"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TableReservations"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TableReservations"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TableReservations"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TableReservations"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TableReservations"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TableReservations"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TableReservations"
                 }
               }
             }
@@ -594,6 +772,51 @@
                 }
               }
             }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TableReservations"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TableReservations"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TableReservations"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TableReservations"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TableReservations"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       },
@@ -791,6 +1014,36 @@
         },
         "additionalProperties": false
       },
+      "CustomerDTOP": {
+        "type": "object",
+        "properties": {
+          "customerID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "customerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "passwordHash": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CustomerDTORes": {
         "type": "object",
         "properties": {
@@ -886,17 +1139,14 @@
           },
           "createdAt": {
             "type": "string",
-            "format": "date-time",
-            "nullable": true
+            "format": "date-time"
           },
           "lastVisited": {
             "type": "string",
-            "format": "date-time",
-            "nullable": true
+            "format": "date-time"
           },
           "isActive": {
-            "type": "boolean",
-            "nullable": true
+            "type": "boolean"
           },
           "orders": {
             "type": "array",
@@ -922,18 +1172,50 @@
         },
         "additionalProperties": false
       },
-      "Menu": {
+      "ItemVariants": {
         "type": "object",
         "properties": {
+          "variantId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
           "itemId": {
             "type": "integer",
             "format": "int32"
           },
-          "itemName": {
+          "variantName": {
             "type": "string",
             "nullable": true
           },
-          "menuCategory": {
+          "additionalPrice": {
+            "type": "number",
+            "format": "double"
+          },
+          "isDefault": {
+            "type": "boolean"
+          },
+          "item": {
+            "$ref": "#/components/schemas/MenuItems"
+          },
+          "orderItems": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OrderItems"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MenuCategories": {
+        "type": "object",
+        "properties": {
+          "categoryID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "categoryName": {
             "type": "string",
             "nullable": true
           },
@@ -941,30 +1223,64 @@
             "type": "string",
             "nullable": true
           },
-          "price": {
+          "displayOrder": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isActive": {
+            "type": "boolean"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MenuItems"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MenuItems": {
+        "type": "object",
+        "properties": {
+          "itemId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "menuCategoryId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "itemName": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "basePrice": {
             "type": "number",
             "format": "double"
           },
           "isAvailable": {
-            "type": "boolean",
-            "nullable": true
+            "type": "boolean"
           },
           "isFeatured": {
-            "type": "boolean",
-            "nullable": true
+            "type": "boolean"
           },
           "imageUrl": {
             "type": "string",
             "nullable": true
           },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
+          "menuCategory": {
+            "$ref": "#/components/schemas/MenuCategories"
           },
-          "updatedAt": {
-            "type": "string",
-            "format": "date-time",
+          "itemsVariant": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ItemVariants"
+            },
             "nullable": true
           },
           "orders": {
@@ -974,49 +1290,12 @@
             },
             "nullable": true
           },
-          "orderItems": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/OrderItems"
-            },
-            "nullable": true
-          },
           "promotions": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Promotions"
             },
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "MenuDTOGET": {
-        "type": "object",
-        "properties": {
-          "itemId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "menuCategory": {
-            "type": "string",
-            "nullable": true
-          },
-          "itemName": {
-            "type": "string",
-            "nullable": true
-          },
-          "imageUrl": {
-            "type": "string",
-            "nullable": true
-          },
-          "description": {
-            "type": "string",
-            "nullable": true
-          },
-          "price": {
-            "type": "number",
-            "format": "double"
           }
         },
         "additionalProperties": false
@@ -1082,6 +1361,10 @@
             "type": "integer",
             "format": "int32"
           },
+          "variantId": {
+            "type": "integer",
+            "format": "int32"
+          },
           "quantity": {
             "type": "integer",
             "format": "int32"
@@ -1099,40 +1382,13 @@
             "nullable": true
           },
           "item": {
-            "$ref": "#/components/schemas/Menu"
+            "$ref": "#/components/schemas/MenuItems"
           },
           "order": {
             "$ref": "#/components/schemas/Orders"
-          }
-        },
-        "additionalProperties": false
-      },
-      "OrderItemsDTOP": {
-        "type": "object",
-        "properties": {
-          "orderId": {
-            "type": "integer",
-            "format": "int32"
           },
-          "itemId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "quantity": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "unitPrice": {
-            "type": "number",
-            "format": "double"
-          },
-          "specialRequests": {
-            "type": "string",
-            "nullable": true
-          },
-          "itemStatus": {
-            "type": "string",
-            "nullable": true
+          "variant": {
+            "$ref": "#/components/schemas/ItemVariants"
           }
         },
         "additionalProperties": false
@@ -1172,6 +1428,14 @@
             "type": "number",
             "format": "double"
           },
+          "paymentMethod": {
+            "type": "string",
+            "nullable": true
+          },
+          "paymentStatus": {
+            "type": "string",
+            "nullable": true
+          },
           "orderStatus": {
             "type": "string",
             "nullable": true
@@ -1204,97 +1468,6 @@
               "$ref": "#/components/schemas/Admins"
             },
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "OrdersDTOP": {
-        "type": "object",
-        "properties": {
-          "customerId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "orderType": {
-            "type": "string",
-            "nullable": true
-          },
-          "orderDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "totalAmount": {
-            "type": "number",
-            "format": "double"
-          },
-          "discountAmount": {
-            "type": "number",
-            "format": "double"
-          },
-          "taxAmount": {
-            "type": "number",
-            "format": "double"
-          },
-          "finalAmount": {
-            "type": "number",
-            "format": "double"
-          },
-          "orderStatus": {
-            "type": "string",
-            "nullable": true
-          },
-          "specialInstructions": {
-            "type": "string",
-            "nullable": true
-          },
-          "reservationId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "orderItems": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/OrderItemsDTOP"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "Payments": {
-        "type": "object",
-        "properties": {
-          "payment_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "order_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "payment_method": {
-            "type": "string",
-            "nullable": true
-          },
-          "payment_amount": {
-            "type": "number",
-            "format": "double"
-          },
-          "payment_status": {
-            "type": "string",
-            "nullable": true
-          },
-          "transaction_reference": {
-            "type": "string",
-            "nullable": true
-          },
-          "payment_date": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "orders": {
-            "$ref": "#/components/schemas/Orders"
           }
         },
         "additionalProperties": false
@@ -1367,7 +1540,7 @@
           "menuItems": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Menu"
+              "$ref": "#/components/schemas/MenuItems"
             },
             "nullable": true
           }

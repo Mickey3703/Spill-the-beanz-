@@ -44,6 +44,6 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Models
 
         public ICollection<CustomerPromotions> SentPromotions { get; set; }
         public ICollection<Admins> Admins { get; set; } //Many promotions created by many admins
-        public ICollection<MenuItems> MenuItems { get; set; } //m:m?
+        public ICollection<Menu> MenuItems { get; set; } //m:m?
     }
 }

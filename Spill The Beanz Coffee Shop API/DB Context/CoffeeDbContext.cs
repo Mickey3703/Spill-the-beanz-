@@ -15,10 +15,11 @@ namespace Spill_The_Beanz_Coffee_Shop_API.DB_Context
 
         public DbSet<Customers> Customers { get; set; } = null!;
         public DbSet<Orders> Orders { get; set; } = null;
-        public DbSet<ItemVariants> ItemVariants { get; set; } = default!; //deafult? null?
-        public DbSet<MenuCategories> Categories { get; set; } = null!;
         public DbSet<Tables> Tables { get; set; } = null!;
         public DbSet<TableReservations> TableReservations { get; set; } = null!;
+        public DbSet<Menu> Menu { get; set; } = null!;
+        public DbSet<OrderItems> OrderItems { get; set; } = null!;
+        public DbSet<Spill_The_Beanz_Coffee_Shop_API.Models.Payments> Payments { get; set; } = default!;
 
     }
 }

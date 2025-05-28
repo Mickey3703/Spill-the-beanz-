@@ -29,13 +29,13 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Models
         public int? LoyaltyPoints { get; set; }
 
         [Column("created_at")]
-        public DateTime CreatedAt { get; set; } //when inserting it, it must just fetch the current date. when clicking, it invokes
+        public DateTime? CreatedAt { get; set; } //when inserting it, it must just fetch the current date. when clicking, it invokes
         
         [Column("last_visited")]
-        public DateTime LastVisited { get; set; } //when they log out. sessions
+        public DateTime? LastVisited { get; set; } //when they log out. sessions
 
         [Column("is_active")]
-        public bool IsActive { get; set; }
+        public bool? IsActive { get; set; }
         //adding these will create additional links
         public virtual ICollection<Orders> Orders { get; set; } = new List<Orders>();
         public ICollection<TableReservations> TableReservations { get; set; } = new List<TableReservations>(); //ok if same name accross classes? not neccessary to declare tb reservation in customers right?

@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.CustomersController",
-    "Method": "GetCustomerOrderList",
+    "Method": "GetCustomerList",
     "RelativePath": "api/Customers",
     "HttpMethod": "GET",
     "IsController": true,
@@ -9,33 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[Spill_The_Beanz_Coffee_Shop_API.DTOs.CustomerDTOOrderGET, Spill The Beanz Coffee Shop API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.CustomersController",
-    "Method": "PostCustomers",
-    "RelativePath": "api/Customers",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "customerdto",
-        "Type": "Spill_The_Beanz_Coffee_Shop_API.DTOs.CustomerDTOP",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Spill_The_Beanz_Coffee_Shop_API.Models.Customers",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Spill_The_Beanz_Coffee_Shop_API.DTOs.CustomerDTOGet, Spill The Beanz Coffee Shop API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -70,27 +44,6 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.CustomersController",
-    "Method": "PutCustomers",
-    "RelativePath": "api/Customers/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "customerdto",
-        "Type": "Spill_The_Beanz_Coffee_Shop_API.DTOs.CustomerDTOP",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.CustomersController",
@@ -130,16 +83,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.ItemVariantsController",
-    "Method": "GetMenuItemVariants",
-    "RelativePath": "api/ItemVariants",
+    "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.MenuItemsController",
+    "Method": "GetMenuItems",
+    "RelativePath": "api/MenuItems",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Spill_The_Beanz_Coffee_Shop_API.Models.ItemVariants, Spill The Beanz Coffee Shop API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Spill_The_Beanz_Coffee_Shop_API.DTOs.MenuDTOGET, Spill The Beanz Coffee Shop API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -150,35 +103,9 @@
     ]
   },
   {
-    "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.ItemVariantsController",
-    "Method": "PostMenuItemVariants",
-    "RelativePath": "api/ItemVariants",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "menuItemVariants",
-        "Type": "Spill_The_Beanz_Coffee_Shop_API.Models.ItemVariants",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Spill_The_Beanz_Coffee_Shop_API.Models.ItemVariants",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.ItemVariantsController",
-    "Method": "GetMenuItemVariants",
-    "RelativePath": "api/ItemVariants/{id}",
+    "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.MenuItemsController",
+    "Method": "GetMenuItems",
+    "RelativePath": "api/MenuItems/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -191,7 +118,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Spill_The_Beanz_Coffee_Shop_API.Models.ItemVariants",
+        "Type": "Spill_The_Beanz_Coffee_Shop_API.Models.Menu",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -202,30 +129,9 @@
     ]
   },
   {
-    "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.ItemVariantsController",
-    "Method": "PutMenuItemVariants",
-    "RelativePath": "api/ItemVariants/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "menuItemVariants",
-        "Type": "Spill_The_Beanz_Coffee_Shop_API.Models.ItemVariants",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.ItemVariantsController",
-    "Method": "DeleteMenuItemVariants",
-    "RelativePath": "api/ItemVariants/{id}",
+    "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.MenuItemsController",
+    "Method": "DeleteMenuItems",
+    "RelativePath": "api/MenuItems/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -240,7 +146,7 @@
   },
   {
     "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.OrdersController",
-    "Method": "GetOrders",
+    "Method": "GetCustomerOrderList",
     "RelativePath": "api/Orders",
     "HttpMethod": "GET",
     "IsController": true,
@@ -248,7 +154,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Spill_The_Beanz_Coffee_Shop_API.Models.Orders, Spill The Beanz Coffee Shop API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[Spill_The_Beanz_Coffee_Shop_API.DTOs.CustomerDTOOrderGET, Spill The Beanz Coffee Shop API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -260,29 +166,19 @@
   },
   {
     "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.OrdersController",
-    "Method": "PostOrders",
+    "Method": "CustomerOrders",
     "RelativePath": "api/Orders",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "orders",
-        "Type": "Spill_The_Beanz_Coffee_Shop_API.Models.Orders",
+        "Name": "cartItems",
+        "Type": "Spill_The_Beanz_Coffee_Shop_API.DTOs.OrdersDTOP",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "Spill_The_Beanz_Coffee_Shop_API.Models.Orders",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.OrdersController",
@@ -312,9 +208,9 @@
   },
   {
     "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.OrdersController",
-    "Method": "PutOrders",
+    "Method": "PatchTableReservationStatus",
     "RelativePath": "api/Orders/{id}",
-    "HttpMethod": "PUT",
+    "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -324,12 +220,22 @@
         "IsRequired": true
       },
       {
-        "Name": "orders",
-        "Type": "Spill_The_Beanz_Coffee_Shop_API.Models.Orders",
+        "Name": "patchDoc",
+        "Type": "Microsoft.AspNetCore.JsonPatch.Operations.Operation[]",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "Spill_The_Beanz_Coffee_Shop_API.Models.Orders",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.OrdersController",
@@ -346,6 +252,32 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.PaymentsController",
+    "Method": "PostPayments",
+    "RelativePath": "api/Payments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payments",
+        "Type": "Spill_The_Beanz_Coffee_Shop_API.Models.Payments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Spill_The_Beanz_Coffee_Shop_API.Models.Payments",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.TableReservationsController",
@@ -369,32 +301,6 @@
   },
   {
     "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.TableReservationsController",
-    "Method": "PostTableReservations",
-    "RelativePath": "api/TableReservations",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "tableReservations",
-        "Type": "Spill_The_Beanz_Coffee_Shop_API.Models.TableReservations",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Spill_The_Beanz_Coffee_Shop_API.Models.TableReservations",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.TableReservationsController",
     "Method": "GetTableReservations",
     "RelativePath": "api/TableReservations/{id}",
     "HttpMethod": "GET",
@@ -418,27 +324,6 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.TableReservationsController",
-    "Method": "PutTableReservations",
-    "RelativePath": "api/TableReservations/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "tableReservations",
-        "Type": "Spill_The_Beanz_Coffee_Shop_API.Models.TableReservations",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "Spill_The_Beanz_Coffee_Shop_API.Controllers.TableReservationsController",

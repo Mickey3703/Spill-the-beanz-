@@ -15,15 +15,16 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddDbContext<CoffeeDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowReactApp", policy =>
-    {
-        policy.WithOrigins("http://10.150.5.19:3000")
-        .AllowAnyMethod()
-        .AllowAnyHeader();
-    });
-});
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy("AllowReactApp", policy =>
+//    {
+//        policy.WithOrigins("http://10.150.5.19:3000")
+//        .AllowAnyMethod()
+//        .AllowAnyHeader();
+//    });
+//});
+
 
 builder.Services.AddControllers()
     .AddJsonOptions(options => {
@@ -42,7 +43,7 @@ builder.Services.AddSwaggerGenNewtonsoftSupport();
 
 var app = builder.Build();
 
-app.UseCors("AllowReactApp");
+//app.UseCors("AllowReactApp");
 
 
 //// Configure the HTTP request pipeline.

@@ -30,12 +30,6 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Models
         [Column("final_amount")]
         public decimal FinalAmount { get; set; }
 
-        [Column("payment_method")]
-        public string PaymentMethod { get; set; }
-
-        [Column("payment_status")]
-        public string PaymentStatus { get; set; }
-
         [Column("order_status")]
         public string OrderStatus { get; set; }
 
@@ -43,10 +37,11 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Models
         public string? SpecialInstructions { get; set; }
 
         [Column("reservation_id")]
+
         public int? ReservationId { get; set; }
         public virtual Customers Customer { get; set; }
-
         public virtual ICollection<OrderItems> OrderItems { get; set; } = new List<OrderItems>();
+        [ForeignKey("ReservationId")]
         public virtual TableReservations TableReservation { get; set; }
         public ICollection<Admins> Admin { get; set; }
 
