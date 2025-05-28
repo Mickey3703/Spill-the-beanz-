@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'; //store and change data  and run code automatically
-
+import './styles/ordertbstyle.css';
 
 //component to display orders table
-function AdminOrders({ endpoint }) {
+function OrdersTable({ endpoint }) {
   const [orders, setOrders] = useState([]);
 
   //function to fetch orders from backend API

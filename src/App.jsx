@@ -4,7 +4,7 @@ import AdminOrders from './Orders';
 import ReservationTable from './Reservations';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import AdminMenu from './MenuAdmin';
+import AdminMenu from './AdminMenu';
 
 function App () {
   return (
