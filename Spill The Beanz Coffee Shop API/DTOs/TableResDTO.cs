@@ -13,7 +13,7 @@ namespace Spill_The_Beanz_Coffee_Shop_API.DTOs
         public TimeOnly start_time { get; set; }
         public TimeOnly end_time { get; set; }
         public int SeatsNumbers { get; set; }
-        public string specialRequests { get; set; }
+        public string? specialRequests { get; set; }
         public string ReservationStatus { get; set; }
         //public List <Orders> Orders { get; set; }  do orders link to reservations?
 

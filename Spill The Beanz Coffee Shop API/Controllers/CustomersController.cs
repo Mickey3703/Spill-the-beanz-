@@ -62,7 +62,7 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Controllers
                     Email = customer.Email,
                     PhoneNumber = customer.PhoneNumber,
                     Address = customer.Address,
-                    Orders = customer.Orders.Select(Orders => new CSMS_Trial.DTOs.OrderDto
+                    Orders = customer.Orders.Select(Orders => new OrderDto
                     {
                         OrderId = Orders.OrderId,
                         OrderItems = Orders.OrderItems.Select(OrderItems => OrderItems.Item.ItemName).ToList(),
@@ -174,61 +174,61 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Controllers
             return CreatedAtAction("Account successfully created", new {id = customer.CustomerID}, customer);
         }
 
-        //[HttpPatch("{id}")] //patch by ID
+        [HttpPatch("{id}")] //patch by ID
 
-        //public async Task<IActionResult> PatchCustomers(int id, JsonPatchDocument<CustomerDTOP> patchDoc) //what exactly is patchdoc?
-        //{
-        //    if (patchDoc == null)
-        //    {
-        //        return BadRequest();
-        //    }
-        //    //find an existing customer row
-        //    var customer = await _context.Customers.FindAsync(id);
-        //    if (customer == null)
-        //    {
-        //        return NotFound();
-        //    }
+        public async Task<IActionResult> PatchCustomers(int id, JsonPatchDocument<CustomerDTOP> patchDoc) //what exactly is patchdoc?
+        {
+            if (patchDoc == null)
+            {
+                return BadRequest();
+            }
+            //find an existing customer row
+            var customer = await _context.Customers.FindAsync(id);
+            if (customer == null)
+            {
+                return NotFound();
+            }
 
-        //    //fetching the property values from class model and creating a new DTO from that
-        //    var customerToPatch = new CustomerDTOP
-        //    {
-        //        CustomerName = customer.CustomerName,
-        //        Email = customer.Email,
-        //        PhoneNumber = customer.PhoneNumber,
-        //        PasswordHash = customer.PasswordHash,
-        //        Address = customer.Address
-        //    };
+            //fetching the property values from class model and creating a new DTO from that
+            var customerToPatch = new CustomerDTOP
+            {
+                CustomerName = customer.CustomerName,
+                Email = customer.Email,
+                PhoneNumber = customer.PhoneNumber,
+                PasswordHash = customer.PasswordHash,
+                Address = customer.Address
+            };
 
-        //    patchDoc.ApplyTo(customerToPatch, (ModelStateDictionary) ModelState);
+            patchDoc.ApplyTo(customerToPatch);
 
-        //    if (!TryValidateModel(customerToPatch)) //is this a form of validation? //is patching done here?
-        //    {
-        //        return ValidationProblem(ModelState);
-        //    }
-        //    //updating kinda
-        //    customer.CustomerName = customerToPatch.CustomerName; //so whatever 'patched' value we get, we update?
-        //    customer.Email = customerToPatch.Email;
-        //    customer.PhoneNumber = customerToPatch.PhoneNumber;
-        //    customer.Address = customerToPatch.Address;
-        //    customer.LastVisited = DateTime.UtcNow; //Not in the DTO but, we are now updating the last visted since that's the case? might leave after this? what for? profile visit?
+            if (!TryValidateModel(customerToPatch)) //is this a form of validation? //is patching done here?
+            {
+                return ValidationProblem(ModelState);
+            }
+            //updating kinda
+            customer.CustomerName = customerToPatch.CustomerName; //so whatever 'patched' value we get, we update?
+            customer.Email = customerToPatch.Email;
+            customer.PhoneNumber = customerToPatch.PhoneNumber;
+            customer.Address = customerToPatch.Address;
+            customer.LastVisited = DateTime.UtcNow; //Not in the DTO but, we are now updating the last visted since that's the case? might leave after this? what for? profile visit?
 
-        //    try
-        //    {
-        //        await _context.SaveChangesAsync();
-        //    }
-        //    catch (DbUpdateConcurrencyException)
-        //    {
-        //        if (!CustomersExists(id))
-        //        { return NotFound(); }
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!CustomersExists(id))
+                { return NotFound(); }
 
-        //        else
-        //        {
-        //            throw;
-        //        }
+                else
+                {
+                    throw;
+                }
 
-        //    }
-        //    return NoContent();
-        //}
+            }
+            return NoContent();
+        }
 
         // DELETE: api/Customers/5
         [HttpDelete("{id}")]

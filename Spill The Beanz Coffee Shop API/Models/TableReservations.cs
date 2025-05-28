@@ -28,10 +28,10 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Models
         public int SeatsNumbers { get; set; }
 
         [Column("special_requests")]
-        public string specialRequests { get; set; }
+        public string? specialRequests { get; set; }
 
         [Column("status")]
-        public string ReservationStatus { get; set; }
+        public string? ReservationStatus { get; set; }
 
         [Column("created_at")]
         public DateTime createdAt { get; set; }

@@ -284,3 +284,6 @@ C:\Users\Sprinter 20\OneDrive - redAcademy (Pty) Ltd\Documents\Projects\Spill Th
 C:\Users\Sprinter 20\OneDrive - redAcademy (Pty) Ltd\Documents\Projects\Spill The Beanz 3 MAIN\Spill-the-beanz-\Spill The Beanz Coffee Shop API\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\Sprinter 20\OneDrive - redAcademy (Pty) Ltd\Documents\Projects\Spill The Beanz 3 MAIN\Spill-the-beanz-\Spill The Beanz Coffee Shop API\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\Sprinter 20\OneDrive - redAcademy (Pty) Ltd\Documents\Projects\Spill The Beanz 3 MAIN\Spill-the-beanz-\Spill The Beanz Coffee Shop API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Sprinter 20\OneDrive - redAcademy (Pty) Ltd\Documents\Projects\Spill The Beanz 3 MAIN\Spill-the-beanz-\Spill The Beanz Coffee Shop API\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Sprinter 20\OneDrive - redAcademy (Pty) Ltd\Documents\Projects\Spill The Beanz 3 MAIN\Spill-the-beanz-\Spill The Beanz Coffee Shop API\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\Sprinter 20\OneDrive - redAcademy (Pty) Ltd\Documents\Projects\Spill The Beanz 3 MAIN\Spill-the-beanz-\Spill The Beanz Coffee Shop API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Newtonsoft.dll

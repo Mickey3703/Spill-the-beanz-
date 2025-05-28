@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-using CSMS_Trial.DTOs;
+using Spill_The_Beanz_Coffee_Shop_API.DTOs;
 
 namespace Spill_The_Beanz_Coffee_Shop_API.DTOs
 {

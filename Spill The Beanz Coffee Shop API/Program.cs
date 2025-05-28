@@ -3,6 +3,7 @@ using Spill_The_Beanz_Coffee_Shop_API.DB_Context;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System.Text.Json.Serialization;
+using Swashbuckle.AspNetCore.Newtonsoft;
 
 
 
@@ -29,13 +30,16 @@ builder.Services.AddControllers()
         options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles; //need namespace
     });
 
-//builder.Services.AddControllers()
-//    .AddNewtonsoftJson();
-//// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddControllers()
+    .AddNewtonsoftJson();
 
 builder.Services.AddControllers();
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGenNewtonsoftSupport();
+
 var app = builder.Build();
 
 app.UseCors("AllowReactApp");

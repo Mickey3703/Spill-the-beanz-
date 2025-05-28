@@ -1,5 +1,5 @@
 ﻿
-namespace CSMS_Trial.DTOs
+namespace Spill_The_Beanz_Coffee_Shop_API.DTOs
 {
     public class OrderDto
     {

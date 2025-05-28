@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-using CSMS_Trial.DTOs;
-
+using Spill_The_Beanz_Coffee_Shop_API.DTOs;
 namespace Spill_The_Beanz_Coffee_Shop_API.DTOs
 {
     public class CustomerDTORes
@@ -8,6 +7,6 @@ namespace Spill_The_Beanz_Coffee_Shop_API.DTOs
         public string CustomerName { get; set; }
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
-        public List<TableResDTO> TableRes { get; set; }
+        public List<TableResDTO> TableReservations { get; set; }
     }
 }
