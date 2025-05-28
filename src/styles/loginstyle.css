@@ -110,3 +110,27 @@ button[type="submit"]:hover {
 .link-button:hover {
   background-color: #e6b063;
 }
+
+@media (max-width: 480px) {
+  .auth-container {
+    width: 90%;
+    padding: 30px 20px;
+  }
+  
+  .form h2 {
+    font-size: 28px;
+  }
+  
+  .input-box {
+    height: 42px;
+  }
+  
+  .checkbox-container {
+    font-size: 12px;
+  }
+  
+  button[type="submit"] {
+    font-size: 16px;
+    padding: 10px;
+  }
+}

@@ -10,7 +10,7 @@ function Header() {
     <header className="header">
       <div className="header-left">
         <button onClick={() => navigate('/')}>Home</button>
-        <button onClick={() => navigate('/menu')}>Menu</button>
+        <button onClick={() => navigate('/menu')}>Admin Menu</button>
       </div>
 
       <div className="header-logo">
@@ -19,7 +19,7 @@ function Header() {
 
       <div className="header-right">
         <button onClick={() => navigate('/orders')}>Customer Orders</button>
-        <button onClick={() => navigate('/booking')}>Reservation</button>
+        <button onClick={() => navigate('/booking')}>Customer Reservations</button>
       </div>
     </header>
   );

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axois';
-import '../styles/adminmenu.css';
+import axios from 'axios';
+import './styles/adminmenu.css';
+import EditItemModal from './EditItemModal';
 
 const AdminMenu = () => {
     //hold all menu items
@@ -42,13 +43,13 @@ const AdminMenu = () => {
     };
 
     //modal for editing items
-    const handleEdit = () => {
-        setEditingItem(item);
+    const handleEdit = (item) => {
+        setEditItem(item);
     };
 
     //to close modal and refresh items if edited
     const handleEditSuccess = () => {
-        setEditingItem(null);
+        setEditItem(null);
         fetchMenuItems(); //to refresh list
     };
 
@@ -61,7 +62,7 @@ const AdminMenu = () => {
             <div className="menu-grid">
                 {menuItems.map(item => (
                     <div key={item.item_id} className="menu-card">
-                        <img src={item.image_url} alt={item.item_name} className="meni-img" />
+                        <img src={item.image_url} alt={item.item_name} className="menu-img" />
                         <h3>{item.item_name}</h3>
                         <p><strong>Category:</strong> {item.category?.category_name || 'Uncategorized'}</p>
                         <p>{item.description}</p>
@@ -77,8 +78,8 @@ const AdminMenu = () => {
 
             {/* to edit the modal */}
 
-            {editingItem && (
-                <EditItemModal item={editItem} onClose={() => setEditingItem(null)} onSuccess={handleEditSuccess} />
+            {editItem && (
+                <EditItemModal item={editItem} onClose={() => setEditItem(null)} onSuccess={handleEditSuccess} />
             )}
         </div>
     );

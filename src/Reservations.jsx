@@ -8,7 +8,7 @@ function ReservationTable({ endpoint }) {
   useEffect(() => {
     const fetchReservations = async () => {
       try {
-        const res = await fetch(endpoint);
+        const res = await fetch(); 
         const data = await res.json();
         setReservations(data);
       } catch (err) {
@@ -33,7 +33,7 @@ function ReservationTable({ endpoint }) {
         <tr>
           <th>Customer</th>
           <th>Contact</th>
-          <th>Status</th>
+          <th>Status</th>  
           <th>Action</th>
         </tr>
       </thead>
