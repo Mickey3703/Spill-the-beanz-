@@ -6,7 +6,7 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import AdminMenu from './MenuAdmin';
 
-function App() {
+function App () {
   return (
     <>
       <Header />
@@ -21,7 +21,6 @@ function App() {
       <Footer />
     </>
   );
-}
+};
 
 export default App;
-// add more roots as you go along

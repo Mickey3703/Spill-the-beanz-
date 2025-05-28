@@ -1,15 +1,29 @@
-.admin-menu-page {
+.admin-menu {
   padding: 2rem;
   background-color: #f5f2ed;
   min-height: 100vh;
   font-family: 'Segoe UI', sans-serif;
 }
 
-.admin-menu-page h1 {
+.admin-menu h1 {
   text-align: center;
   margin-bottom: 2rem;
   color: #5c3d2e;
   font-size: 2rem;
+}
+
+.add-button {
+  background-color: #3c8dbc;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #367fa9;
 }
 
 .menu-grid {
@@ -68,9 +82,13 @@
   font-size: 0.9rem;
 }
 
-.menu-actions button:first-child {
+.menu-actions .edit-btn {
   background-color: #8b5e3c;
   color: white;
+}
+
+.menu-actions .edit-btn:hover {
+  background-color: #6f472e;
 }
 
 .menu-actions .delete-btn {
@@ -78,8 +96,86 @@
   color: white;
 }
 
+.menu-actions .delete-btn:hover {
+  background-color: #c9302c;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.add-menu-form,
+.edit-menu-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add-menu-form input,
+.edit-menu-form input,
+.add-menu-form textarea,
+.edit-menu-form textarea {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+input[type="file"] {
+  margin-top: 0.5rem;
+}
+
+.add-menu-form button,
+.edit-menu-form button {
+  background-color: #5c3d2e;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.add-menu-form button:hover,
+.edit-menu-form button:hover {
+  background-color: #432c1e;
+}
+
+.edit-menu-form button[type="button"] {
+  background-color: #999;
+  margin-top: -0.5rem;
+}
+
+.edit-menu-form button[type="button"]:hover {
+  background-color: #777;
+}
+
 @media (max-width: 600px) {
   .menu-grid {
     grid-template-columns: 1fr;
+  }
+
+  .modal-content {
+    margin: 1rem;
+    padding: 1.5rem;
   }
 }
