@@ -49,28 +49,28 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Controllers
         }
 
         // GET: api/MenuItems/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Menu>> GetMenuItems(int id)
-        {
-            var menuItems = await _context.Menu.FindAsync(id);
+        //[HttpGet("{id}")]
+        //public async Task<ActionResult<Menu>> GetMenuItems(int id)
+        //{
+        //    var menuItems = await _context.Menu.FindAsync(id);
 
-            if (menuItems == null)
-            {
-                return NotFound();
-            }
+        //    if (menuItems == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            var menuItemsDto = new MenuDTOGET()
-            {
-                ItemId = menuItems.ItemId,
-                MenuCategory = menuItems.MenuCategory,
-                ItemName = menuItems.ItemName,
-                ImageUrl = menuItems.ImageUrl,
-                Description = menuItems.Description,
-                Price = menuItems.Price,
-            };
+        //    var menuItemsDto = new MenuDTOGET()
+        //    {
+        //        ItemId = menuItems.ItemId,
+        //        MenuCategory = menuItems.MenuCategory,
+        //        ItemName = menuItems.ItemName,
+        //        ImageUrl = menuItems.ImageUrl,
+        //        Description = menuItems.Description,
+        //        Price = menuItems.Price,
+        //    };
 
-            return menuItems;
-        }
+        //    return menuItems;
+        //}
 
         // PUT: api/MenuItems/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
