@@ -6,7 +6,7 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import AdminMenu from './AdminMenu';
 
-function App() {
+function App () {
   return (
     <>
       <Header />
@@ -21,6 +21,6 @@ function App() {
       <Footer />
     </>
   );
-}
+};
 
 export default App;
