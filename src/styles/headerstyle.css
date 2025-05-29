@@ -1,4 +1,4 @@
-.header {
+header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +16,7 @@
 }
 
 
-.header button {
+header button {
   background-color: #FFF7ED;
   color: #4B2E1E;
   font-size: 1.5rem;
@@ -30,12 +30,12 @@
   border-radius: 0.8rem;
 }
 
-.header button:hover {
+header button:hover {
   background-color: #E6C8A0; 
   color: #3E2B1C; 
 }
 
-.header button.active {
+header button.active {
   background-color: #E6C8A0; 
   color: #3E2B1C;
 }

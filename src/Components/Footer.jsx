@@ -3,7 +3,7 @@ import '../styles/headerstyle.css';
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer>
       <p>&copy; {new Date().getFullYear()} Spill The Beanz. All rights reserved.</p>
     </footer>
   );

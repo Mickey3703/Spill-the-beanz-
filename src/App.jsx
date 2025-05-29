@@ -13,9 +13,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<LoginForm />} />
-        <Route path="/orders" element={<AdminOrders />} />
-        <Route path="/booking" element={<ReservationTable />} />
-        <Route path="/menu" element={<AdminMenu />} />
+        <Route path="/Orders" element={<AdminOrders />} />
+        <Route path="/Reservations" element={<ReservationTable />} />
+        <Route path="/AdminMenu" element={<AdminMenu />} />
       </Routes>
 
       <Footer />
@@ -24,4 +24,3 @@ function App() {
 }
 
 export default App;
-// add more roots as you go along

@@ -50,6 +50,7 @@ const AdminMenu = () => {
   };
 
   if (loading) return <p>Loading menu items...</p>;
+  if (error) return <p>Error: {error}</p>;
 
   return (
     <div className="admin-menu">

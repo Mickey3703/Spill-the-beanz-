@@ -7,10 +7,10 @@ function Header() {
   const navigate = useNavigate();
 
   return (
-    <header className="header">
+    <header>
       <div className="header-left">
         <button onClick={() => navigate('/')}>Home</button>
-        <button onClick={() => navigate('/menu')}>Admin Menu</button>
+        <button onClick={() => navigate('/AdminMenu')}>Admin Menu</button>
       </div>
 
       <div className="header-logo">
@@ -18,8 +18,8 @@ function Header() {
       </div>
 
       <div className="header-right">
-        <button onClick={() => navigate('/orders')}>Customer Orders</button>
-        <button onClick={() => navigate('/booking')}>Customer Reservations</button>
+        <button onClick={() => navigate('/Orders')}>Customer Orders</button>
+        <button onClick={() => navigate('/Reservations')}>Customer Reservations</button>
       </div>
     </header>
   );

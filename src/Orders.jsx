@@ -1,36 +1,40 @@
-import React, { useState, useEffect } from 'react'; //store and change data  and run code automatically
+import React, { useState, useEffect } from 'react'; 
 import './styles/ordertbstyle.css';
 
-//component to display orders table
-function OrdersTable({ endpoint }) {
+// component for OrdersTable
+const OrdersTable = ({ endpoint }) => {
   const [orders, setOrders] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  //function to fetch orders from backend API
   const fetchOrders = async () => {
     try {
-      const res = await fetch(endpoint);                    //send GET request to the given endpoint
-      const data = await res.json();                        //parse JSON response
-      setOrders(data);                                      //update state with order data
-    } catch (err) {
-      console.error("Failed to fetch orders:", err);        //log any errors
+      const response = await fetch(endpoint);
+      const data = await response.json();
+      setOrders(data);
+    } catch (error) {
+      console.error("Error fetching orders", error);
+    } finally {
+      setLoading(false);
     }
   };
 
-  //useEffect: run on first load and when endpoint changes
   useEffect(() => {
-    fetchOrders();                                          //fetch immediately
-    const interval = setInterval(fetchOrders, 5000);        //refresh every 5 seconds
-    return () => clearInterval(interval);                   //cleanup on unmount
-  }, [endpoint]);
+    fetchOrders();
+    const interval = setInterval(fetchOrders, 5000);
+    return () => clearInterval(interval);
+  }, [endpoint]); 
+
+  if (loading) return <p>Loading orders...</p>;
 
   return (
     <table className="orders-table">
       <thead>
         <tr>
+          <th>Order ID</th>
           <th>Customer</th>
-          <th>Contact details</th>
-          <th>Address</th>
-          <th>Items</th>
+          <th>Type</th>
+          <th>Date</th>
+          <th>Instructions/Requests</th>
           <th>Status</th>
           <th>Total</th>
         </tr>
@@ -38,17 +42,18 @@ function OrdersTable({ endpoint }) {
       <tbody>
         {orders.length === 0 ? (
           <tr>
-            <td colSpan="6" className="empty-row">No orders found.</td>
+            <td colSpan="7" className="empty-row">No orders found.</td>
           </tr>
         ) : (
           orders.map((order) => (
-            <tr key={order.id}>
-              <td>{order.customer || '—'}</td>
-              <td>{(order.email || order.phone) ? `${order.email} / ${order.phone}` : '—'}</td>
-              <td>{order.address || '—'}</td>
-              <td>{order.items.join(", ") || '—'}</td>
-              <td>{order.status || '—'}</td>
-              <td>{order.total ? `$${order.total.toFixed(2)}` : '—'}</td>
+            <tr key={order.order_id}>
+              <td>{order.order_id}</td>
+              <td>{order.customer_name || '—'}</td>
+              <td>{order.order_type || '—'}</td>
+              <td>{new Date(order.order_date).toLocaleString()}</td>
+              <td>{order.special_instructions || '—'}</td>
+              <td>{order.order_status || '—'}</td>
+              <td>{order.final_amount ? `$${parseFloat(order.final_amount).toFixed(2)}` : '—'}</td>
             </tr>
           ))
         )}
@@ -56,6 +61,7 @@ function OrdersTable({ endpoint }) {
     </table>
   );
 };
+
 
 //parent component to handle tabs and switch between order types
 export default function AdminOrders() {
