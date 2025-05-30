@@ -1,0 +1,61 @@
+/* Global Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Root Variables for Theme */
+:root {
+  --bg-pastel: #fdf7f0;
+  --text-main: #3e2b1c;
+  --font-main: 'Segoe UI', sans-serif;
+  --accent-light: #f5e9dd;
+  --accent-strong: #c97c5d;
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* HTML Settings */
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+/* Body Styling */
+body {
+  background-color: var(--bg-pastel);
+  background-image: url('/images/MenuItemsNB/veritcal-bck.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: var(--font-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Optional: Fade-in effect for entire page */
+body {
+  opacity: 0;
+  animation: fadeInBody 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeInBody {
+  to {
+    opacity: 1;
+  }
+}

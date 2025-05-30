@@ -1,0 +1,114 @@
+:root {
+  --coffee-cream: #fffaf5;
+  --coffee-tan: #e8d9c6;
+  --coffee-brown: #5e4637;
+  --coffee-accent: #d2b48c;
+  --coffee-fade: #cbb8a5;
+  --coffee-shadow: rgba(0, 0, 0, 0.05);
+  --font: 'Segoe UI', sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--coffee-cream);
+  color: var(--coffee-brown);
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  transition: background 0.3s ease;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: var(--coffee-cream);
+  box-shadow: 0 0 20px var(--coffee-shadow);
+  border-radius: 20px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: transform 0.4s ease, filter 300ms;
+  will-change: filter, transform;
+  border-radius: 50%;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 1.5em var(--coffee-accent));
+  transform: scale(1.1);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 1.5em #61dafb99);
+}
+
+.card {
+  background: var(--coffee-fade);
+  border-radius: 12px;
+  padding: 2em;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 12px var(--coffee-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.read-the-docs {
+  color: #8e7c6a;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  opacity: 0.8;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo.animate-spin {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 1rem;
+  }
+
+  #root {
+    padding: 2rem 1rem;
+  }
+
+  .logo {
+    height: 4em;
+    padding: 1em;
+  }
+
+  .card {
+    padding: 1.5em;
+  }
+}

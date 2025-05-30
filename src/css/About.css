@@ -1,0 +1,157 @@
+:root {
+  --coffee-bg: #fff9f5;
+  --coffee-text: #4e3d30;
+  --coffee-accent: #dcbfa6;
+  --coffee-highlight: #f8e8da;
+  --coffee-light: #f4e3d3;
+  --coffee-shadow: rgba(0, 0, 0, 0.07);
+  --font: 'Segoe UI', sans-serif;
+}
+
+.about-page .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  font-family: var(--font);
+  color: var(--coffee-text);
+  background-color: var(--coffee-bg);
+  animation: fadeIn 1s ease-in;
+}
+
+.about-page .title {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--coffee-text);
+  font-weight: bold;
+  position: relative;
+  animation: slideInTop 0.7s ease-out;
+}
+
+.about-page .title::after {
+  content: '';
+  display: block;
+  margin: 1rem auto 0;
+  width: 60px;
+  height: 4px;
+  background: var(--coffee-accent);
+  border-radius: 2px;
+}
+
+.about-page .lead {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #5a4336;
+  animation: fadeIn 1.2s ease-in;
+}
+
+.about-page h2 {
+  font-size: 1.75rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--coffee-text);
+  text-align: center;
+  font-weight: 600;
+}
+
+.about-page p,
+.about-page ul {
+  text-align: center;
+  font-size: 1.05rem;
+  color: #5f4a3c;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.about-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.team-list li {
+  margin: 1.2rem 0;
+  padding: 1.5rem 1rem;
+  background-color: var(--coffee-highlight);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px var(--coffee-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: floatCard 0.9s ease-in-out;
+}
+
+.team-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes floatCard {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-page .title {
+    font-size: 2.2rem;
+  }
+
+  .about-page .lead {
+    font-size: 1.05rem;
+    padding: 0 1rem;
+  }
+
+  .team-list li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page .container {
+    padding: 2rem 1rem;
+  }
+
+  .about-page .title {
+    font-size: 1.85rem;
+  }
+
+  .about-page .lead {
+    font-size: 0.95rem;
+  }
+
+  .about-page h2 {
+    font-size: 1.4rem;
+  }
+}

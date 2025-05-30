@@ -1,0 +1,135 @@
+.order-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fffaf6;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.order-title {
+  font-size: 2.2rem;
+  color: #513728;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fdf3ec;
+  padding: 1rem 1.2rem;
+  border: 1px solid #e9dcd1;
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+  transition: background 0.3s ease;
+}
+
+.cart-item:hover {
+  background: #f7e6d7;
+}
+
+.remove-btn {
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.remove-btn:hover {
+  background: #c9302c;
+}
+
+.cart-actions {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.clear-btn {
+  background: #6b4f3b;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: background 0.3s ease;
+}
+
+.clear-btn:hover {
+  background: #513728;
+}
+
+.continue-link,
+.back-link {
+  color: #6b4f3b;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.continue-link:hover,
+.back-link:hover {
+  text-decoration: underline;
+  color: #513728;
+}
+
+.empty-cart {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  color: #9e7b5d;
+  font-style: italic;
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #4e342e;
+  margin-top: 1.5rem;
+}
+@keyframes fadeInUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.cart-item {
+  animation: fadeInUp 0.4s ease both;
+}
+@keyframes fadeInUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.cart-item {
+  animation: fadeInUp 0.4s ease both;
+}
