@@ -47,11 +47,13 @@ const ReservationTable = () => {
         <tr>
           <th>Reservation</th>
           <th>Customer</th>
+          <th>Contact</th>
           <th>Table</th>
           <th>Date</th>
           <th>From</th>
           <th>Until</th>
           <th>Party Size</th>
+          <th>Special Requests</th>
           <th>Status</th>
           <th>Action</th>
         </tr>
@@ -65,17 +67,19 @@ const ReservationTable = () => {
           </tr>
         ) : (
           reservations.map((r) => (
-            <tr key={r.reservation_id}>
-              <td>{r.reservation_id || '—'}</td>
-              <td>{r.customer_id || '—'}</td>
-              <td>{r.table_id || '—'}</td>
-              <td>{r.reservation_date || '—'}</td>
+            <tr key={r.reservationId}>
+              <td>{r.reservationId || '—'}</td>
+              <td>{r.customerName || '—'}</td>
+              <td>{r.email || r.phoneNumber ||'—'}</td>
+              <td>{r.tableId || '—'}</td>
+              <td>{r.reservationDate || '—'}</td>
               <td>{r.start_time || '—'}</td>
               <td>{r.end_time || '—'}</td>
-              <td>{r.party_size || '—'}</td>
-              <td>{r.status || '—'}</td>
+              <td>{r.seatsNumbers}</td>
+              <td>{r.specialRequests || '—'}</td>
+              <td>{r.reservationStatus || '—'}</td>
               <td>
-                {r.status === "Pending" && (
+                {r.reservationStatus === "Pending" && (
                   <>
                     <button className="action" onClick={() => updateReservationStatus(r.reservation_id, "Confirmed")}>Confirm</button>
                     <button className="action" onClick={() => updateReservationStatus(r.reservation_id, "Cancelled")}>Cancel</button>
@@ -90,4 +94,14 @@ const ReservationTable = () => {
   );
 };
  
-export default ReservationTable;
+export default function AdminReservations () {
+  return (
+    <div className="reservation-page">
+      <h1>Reservation Management</h1>
+      <div className="reservation-tabs">
+        <button className="active">All Reservations</button>
+      </div>
+      <ReservationTable endpoints="/api/reservations" />
+    </div>
+  );
+};

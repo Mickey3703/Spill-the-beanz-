@@ -46,9 +46,9 @@ const OrdersTable = ({ endpoint }) => {
           </tr>
         ) : (
           orders.map((order) => (
-            <tr key={order.order_id}>
-              <td>{order.order_id}</td>
-              <td>{order.customer_name || '—'}</td>
+            <tr key={order.orderId}>
+              <td>{order.orderId}</td>
+              <td>{order.customerName || '—'}</td>
               <td>{order.order_type || '—'}</td>
               <td>{new Date(order.order_date).toLocaleString()}</td>
               <td>{order.special_instructions || '—'}</td>
