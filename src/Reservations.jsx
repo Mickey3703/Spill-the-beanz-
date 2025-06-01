@@ -7,7 +7,7 @@ const ReservationTable = () => {
 
   const fetchReservations = async () => {
     try {
-      const response = await fetch('/api/reservations'); // add API for reservations
+      const response = await fetch(`https://localhost:7264/api/TableReservations`); // add API for reservations
       const data = await response.json();
       setReservations(data);
     } catch (error) {
@@ -17,12 +17,12 @@ const ReservationTable = () => {
     }
   };
  
-  const updateReservationStatus = async (id, status) => { // approve or dismiss reservations
+  const updateReservationStatus = async (reservationId, reservationStatus) => { // approve or dismiss reservations
     try {
-      const response = await fetch(`/api/reservations/${id}`, {
-        method: 'PUT',
+      const response = await fetch(`https://localhost:7264/api/TableReservations${reservationId}`, {
+        method: 'GET',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ status }),
+        body: JSON.stringify({ reservationStatus }),
       });
 
       if (!response.ok) throw new Error('Failed to update reservation');
@@ -66,27 +66,33 @@ const ReservationTable = () => {
             </td>
           </tr>
         ) : (
-          reservations.map((r) => (
-            <tr key={r.reservationId}>
-              <td>{r.reservationId || '—'}</td>
-              <td>{r.customerName || '—'}</td>
-              <td>{r.email || r.phoneNumber ||'—'}</td>
-              <td>{r.tableId || '—'}</td>
-              <td>{r.reservationDate || '—'}</td>
-              <td>{r.start_time || '—'}</td>
-              <td>{r.end_time || '—'}</td>
-              <td>{r.seatsNumbers}</td>
-              <td>{r.specialRequests || '—'}</td>
-              <td>{r.reservationStatus || '—'}</td>
-              <td>
-                {r.reservationStatus === "Pending" && (
-                  <>
-                    <button className="action" onClick={() => updateReservationStatus(r.reservation_id, "Confirmed")}>Confirm</button>
-                    <button className="action" onClick={() => updateReservationStatus(r.reservation_id, "Cancelled")}>Cancel</button>
-                  </>
-                )}
-              </td>
-            </tr>
+          reservations.map((r) =>
+            r.tableReservations.map((table, index) => (
+              <tr key={`${r.reservationId}-${index}`}>
+                <td>{r.reservationId || '—'}</td>
+                <td>{r.customerName || '—'}</td>
+                <td>{r.email || r.phoneNumber || '—'}</td>
+                <td>{table.tableId || '—'}</td>
+                <td>{table.reservationDate || '—'}</td>
+                <td>{table.startTime || '—'}</td>
+                <td>{table.endTime || '—'}</td>
+                <td>{table.partySize || '—'}</td>
+                <td>{table.specialRequests || '—'}</td>
+                <td>{table.reservationStatus || '—'}</td>
+                <td>
+                  {table.reservationStatus === "Pending" && (
+                    <>
+                      <button className="action" onClick={() => updateReservationStatus(r.reservationId, "Confirmed")}>
+                        Confirm
+                      </button>
+                      <button className="action" onClick={() => updateReservationStatus(r.reservationId, "Cancelled")}>
+                        Cancel
+                      </button>
+                    </>
+                  )}
+                </td>
+              </tr>
+            )
           ))
         )}
       </tbody>
@@ -101,7 +107,7 @@ export default function AdminReservations () {
       <div className="reservation-tabs">
         <button className="active">All Reservations</button>
       </div>
-      <ReservationTable endpoints="/api/reservations" />
+      <ReservationTable />
     </div>
   );
 };

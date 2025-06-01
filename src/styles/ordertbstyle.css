@@ -164,3 +164,13 @@ body {
   color: #ffffff;
   font-weight: bold;
 }
+
+.action {
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  border: 1px solid #d7ccc8;
+  background-color: #fff8f1;
+  color: #5d4037;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}

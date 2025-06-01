@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './styles/ordertbstyle.css';
 
 // component for OrdersTable
-const OrdersTable = ({ endpoint }) => {
+const OrdersTable = ({ endpoint, filterType }) => {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -26,42 +26,47 @@ const OrdersTable = ({ endpoint }) => {
 
   if (loading) return <p>Loading orders...</p>;
 
+  const filteredRows = orders.flatMap((order) =>
+    order.orders
+      .filter((o) => o.orderType?.toLowerCase() === filterType.toLowerCase())
+      .map((o, index) => (
+        <tr key={`${order.orderId}-${index}`}>
+          <td>{order.orderId}</td>
+          <td>{order.customerName || '—'}</td>
+          <td>{order.email || order.phoneNumber || '—'}</td>
+          <td>{new Date(o.orderDate).toLocaleString()}</td>
+          <td>{o.specialInstructions || '—'}</td>
+          <td>{o.orderStatus || '—'}</td>
+          <td>{o.finalAmount !== undefined ? `$${parseFloat(o.finalAmount).toFixed(2)}` : '—'}</td>
+        </tr>
+      ))
+    );
+
   return (
     <table className="orders-table">
       <thead>
         <tr>
           <th>Order ID</th>
           <th>Customer</th>
-          <th>Type</th>
+          <th>Contact</th>
           <th>Date</th>
-          <th>Instructions/Requests</th>
+          <th>Instructions</th>
           <th>Status</th>
           <th>Total</th>
         </tr>
       </thead>
       <tbody>
-        {orders.length === 0 ? (
+        {filteredRows.length === 0 ? (
           <tr>
             <td colSpan="7" className="empty-row">No orders found.</td>
           </tr>
         ) : (
-          orders.map((order) => (
-            <tr key={order.orderId}>
-              <td>{order.orderId}</td>
-              <td>{order.customerName || '—'}</td>
-              <td>{order.order_type || '—'}</td>
-              <td>{new Date(order.order_date).toLocaleString()}</td>
-              <td>{order.special_instructions || '—'}</td>
-              <td>{order.order_status || '—'}</td>
-              <td>{order.final_amount ? `$${parseFloat(order.final_amount).toFixed(2)}` : '—'}</td>
-            </tr>
-          ))
+          filteredRows
         )}
       </tbody>
     </table>
   );
 };
-
 
 //parent component to handle tabs and switch between order types
 export default function AdminOrders() {
@@ -86,11 +91,7 @@ export default function AdminOrders() {
         </button>
       </div>
 
-      {activeTab === "online" ? (
-        <OrdersTable endpoint="/api/online-orders" />  //add online orders endpoint
-      ) : (
-        <OrdersTable endpoint="/api/instore-orders" />  //add in-store orders endpoint
-      )}
+      <OrdersTable endpoint="https://localhost:7264/api/Orders" filterType={activeTab} />
     </div>
   );
 };
