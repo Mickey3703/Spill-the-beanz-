@@ -41,7 +41,7 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Controllers
                    Address = order.Customer.Address,
                    Orders = new List<OrderDto>
                        { new OrderDto
-                       {
+                       {   OrderType = order.OrderType,
                            OrderDate = order.OrderDate,
                            SpecialInstructions = order.SpecialInstructions,
                            OrderStatus = order.OrderStatus,

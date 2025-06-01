@@ -19,7 +19,22 @@ namespace Spill_The_Beanz_Coffee_Shop_API.DB_Context
         public DbSet<TableReservations> TableReservations { get; set; } = null!;
         public DbSet<Menu> Menu { get; set; } = null!;
         public DbSet<OrderItems> OrderItems { get; set; } = null!;
-        public DbSet<Spill_The_Beanz_Coffee_Shop_API.Models.Payments> Payments { get; set; } = default!;
+        public DbSet<Payments> Payments { get; set; } = default!;
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<OrderItems>()
+                .HasOne(oi => oi.Menu)
+                .WithMany(m => m.OrderItems)
+                .HasForeignKey(oi => oi.ItemId)
+                .HasConstraintName("FK_OrderItems_Menu");
+
+            base.OnModelCreating(modelBuilder);
+      
+
+        }
     }
+
+
+    
 }

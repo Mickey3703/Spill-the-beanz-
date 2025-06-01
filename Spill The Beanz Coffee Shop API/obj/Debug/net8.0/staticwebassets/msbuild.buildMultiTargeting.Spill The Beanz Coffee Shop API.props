@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Spill The Beanz Coffee Shop API.props" />
-</Project>

@@ -939,6 +939,10 @@
       "OrderDto": {
         "type": "object",
         "properties": {
+          "orderType": {
+            "type": "string",
+            "nullable": true
+          },
           "orderDate": {
             "type": "string",
             "format": "date-time"
@@ -973,13 +977,12 @@
             "type": "integer",
             "format": "int32"
           },
+          "menu": {
+            "$ref": "#/components/schemas/Menu"
+          },
           "quantity": {
             "type": "integer",
             "format": "int32"
-          },
-          "unitPrice": {
-            "type": "number",
-            "format": "double"
           },
           "specialRequests": {
             "type": "string",
@@ -989,8 +992,9 @@
             "type": "string",
             "nullable": true
           },
-          "item": {
-            "$ref": "#/components/schemas/Menu"
+          "unitPrice": {
+            "type": "number",
+            "format": "double"
           },
           "order": {
             "$ref": "#/components/schemas/Orders"

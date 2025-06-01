@@ -37,6 +37,7 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Models
         [Column("updated_at")]
         public DateTime? UpdatedAt { get; set; }
         public virtual ICollection<Orders> orders { get; set; } = new List<Orders>();
+
         public virtual ICollection<OrderItems> OrderItems { get; set; } = new List<OrderItems>();
         public virtual ICollection<Promotions> promotions { get; set; } = new List<Promotions>();
     }
