@@ -295,44 +295,6 @@
       }
     },
     "/api/Orders/{id}": {
-      "get": {
-        "tags": [
-          "Orders"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Orders"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Orders"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Orders"
-                }
-              }
-            }
-          }
-        }
-      },
       "patch": {
         "tags": [
           "Orders"
@@ -521,44 +483,6 @@
       }
     },
     "/api/TableReservations/{id}": {
-      "get": {
-        "tags": [
-          "TableReservations"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/TableReservations"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/TableReservations"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/TableReservations"
-                }
-              }
-            }
-          }
-        }
-      },
       "patch": {
         "tags": [
           "TableReservations"
@@ -717,7 +641,7 @@
           "orders": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/OrderDto"
+              "$ref": "#/components/schemas/CustomerDTOOrderGET"
             },
             "nullable": true
           }
@@ -727,6 +651,10 @@
       "CustomerDTOOrderGET": {
         "type": "object",
         "properties": {
+          "orderId": {
+            "type": "integer",
+            "format": "int32"
+          },
           "customerName": {
             "type": "string",
             "nullable": true
@@ -756,6 +684,10 @@
       "CustomerDTORes": {
         "type": "object",
         "properties": {
+          "reservationId": {
+            "type": "integer",
+            "format": "int32"
+          },
           "customerName": {
             "type": "string",
             "nullable": true
@@ -1007,15 +939,12 @@
       "OrderDto": {
         "type": "object",
         "properties": {
-          "orderId": {
-            "type": "integer",
-            "format": "int32"
+          "orderDate": {
+            "type": "string",
+            "format": "date-time"
           },
-          "orderItems": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
+          "specialInstructions": {
+            "type": "string",
             "nullable": true
           },
           "orderStatus": {
@@ -1339,14 +1268,6 @@
       "TableResDTO": {
         "type": "object",
         "properties": {
-          "reservationId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "customerId": {
-            "type": "integer",
-            "format": "int32"
-          },
           "tableId": {
             "type": "integer",
             "format": "int32"
@@ -1355,15 +1276,15 @@
             "type": "string",
             "format": "date"
           },
-          "start_time": {
+          "startTime": {
             "type": "string",
             "format": "time"
           },
-          "end_time": {
+          "endTime": {
             "type": "string",
             "format": "time"
           },
-          "seatsNumbers": {
+          "partySize": {
             "type": "integer",
             "format": "int32"
           },
@@ -1397,15 +1318,15 @@
             "type": "string",
             "format": "date"
           },
-          "start_time": {
+          "startTime": {
             "type": "string",
             "format": "time"
           },
-          "end_time": {
+          "endTime": {
             "type": "string",
             "format": "time"
           },
-          "seatsNumbers": {
+          "partySize": {
             "type": "integer",
             "format": "int32"
           },

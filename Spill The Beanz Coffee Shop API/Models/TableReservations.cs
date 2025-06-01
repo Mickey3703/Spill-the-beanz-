@@ -13,22 +13,22 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Models
         public int CustomerId { get; set; }
 
         [Column("table_id")]
-        public int tableId { get; set; }
+        public int TableId { get; set; }
 
         [Column("reservation_date")]
         public DateOnly ReservationDate { get; set; }
 
         [Column("start_time")]
-        public TimeOnly start_time { get; set; }
+        public TimeOnly StartTime { get; set; }
 
         [Column("end_time")]
-        public TimeOnly end_time { get; set; }
+        public TimeOnly EndTime { get; set; }
 
         [Column("party_size")]
-        public int SeatsNumbers { get; set; }
+        public int PartySize { get; set; }
 
         [Column("special_requests")]
-        public string? specialRequests { get; set; }
+        public string? SpecialRequests { get; set; }
 
         [Column("status")]
         public string? ReservationStatus { get; set; }

@@ -27,25 +27,31 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Controllers
         [HttpGet] //customerOrders
         public async Task<ActionResult<List<CustomerDTOOrderGET>>> GetCustomerOrderList()
         {
-            var customerOrders = await _context.Customers
-                .Include(customer => customer.Orders) //include from orders table
-                .ThenInclude(Orders => Orders.OrderItems)
-                .ThenInclude(orderItem => orderItem.Item)
-                .Select(customer => new CustomerDTOOrderGET
-                {
-                    CustomerName = customer.CustomerName,
-                    Email = customer.Email,
-                    PhoneNumber = customer.PhoneNumber,
-                    Address = customer.Address,
-                    Orders = customer.Orders.Select(Orders => new OrderDto
-                    {
-                        OrderId = Orders.OrderId,
-                        OrderItems = Orders.OrderItems.Select(OrderItems => OrderItems.Item.ItemName).ToList(),
-                        OrderStatus = Orders.OrderStatus,
-                        FinalAmount = Orders.FinalAmount
-                    }).ToList()
-                })//retrieving all rows from DB
-                    .ToListAsync();
+
+            var customerOrders = await _context.Orders
+               .Include(customer => customer.Customer) //include from customer table for customer details
+               .ThenInclude(Orders => Orders.Orders) //then orders again
+               .ThenInclude(orderItem => orderItem.OrderItems)
+               .Select(order => new CustomerDTOOrderGET
+               {
+                   OrderId = order.OrderId,
+                   CustomerName = order.Customer.CustomerName,
+                   Email = order.Customer.Email,
+                   PhoneNumber = order.Customer.PhoneNumber,
+                   Address = order.Customer.Address,
+                   Orders = new List<OrderDto>
+                       { new OrderDto
+                       {
+                           OrderDate = order.OrderDate,
+                           SpecialInstructions = order.SpecialInstructions,
+                           OrderStatus = order.OrderStatus,
+                           FinalAmount = order.FinalAmount
+                       }
+                       }
+
+                   })                   
+            //retrieving all rows from DB
+                   .ToListAsync();
 
             if (customerOrders == null)
             {
@@ -58,40 +64,71 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Controllers
 
         }
 
+        //    var customerOrders = await _context.Customers
+        //        .Include(customer => customer.Orders) //include from orders table
+        //        .ThenInclude(Orders => Orders.OrderItems)
+        //        .ThenInclude(orderItem => orderItem.Item)
+        //        .Select(customer => new CustomerDTOOrderGET
+        //        {
+        //            CustomerName = customer.CustomerName,
+        //            Email = customer.Email,
+        //            PhoneNumber = customer.PhoneNumber,
+        //            Address = customer.Address,
+        //            Orders = customer.Orders.Select(Orders => new OrderDto
+        //            {
+        //                OrderId = Orders.OrderId,
+        //                OrderItems = Orders.OrderItems.Select(OrderItems => OrderItems.Item.ItemName).ToList(),
+        //                OrderStatus = Orders.OrderStatus,
+        //                FinalAmount = Orders.FinalAmount
+        //            }).ToList()
+        //        })//retrieving all rows from DB
+        //            .ToListAsync();
+
+        //    if (customerOrders == null)
+        //    {
+
+        //        return NotFound();
+        //    }
+
+        //    return Ok(customerOrders);
+
+
+        //}
+
         // GET: api/Orders/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Orders>> GetOrders(int id)
-        {
-            var orders = await _context.Orders.FindAsync(id);
+        //[HttpGet("{id}")]
+        //public async Task<ActionResult<Orders>> GetOrders(int id)
+        //{
+        //    var orders = await _context.Orders.FindAsync(id);
 
-            if (orders == null)
-            {
-                return NotFound();
-            }
-            var customerOrders = await _context.Customers
-                .Include(customer => customer.Orders) //include from orders table
-                .ThenInclude(Orders => Orders.OrderItems)
-                .ThenInclude(orderItem => orderItem.Item)
-                .Select(customer => new CustomerDTOOrderGET
-                {
-                    CustomerName = customer.CustomerName,
-                    Email = customer.Email,
-                    PhoneNumber = customer.PhoneNumber,
-                    Address = customer.Address,
-                    Orders = customer.Orders.Select(Orders => new OrderDto
-                    {
-                        OrderId = Orders.OrderId,
-                        OrderItems = Orders.OrderItems.Select(OrderItems => OrderItems.Item.ItemName).ToList(),
-                        OrderStatus = Orders.OrderStatus,
-                        FinalAmount = Orders.FinalAmount
-                    }).ToList()
-                })//retrieving all rows from DB
-                    .ToListAsync();
+        //    if (orders == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    var customerOrders = await _context.Customers
+        //        .Include(customer => customer.Orders) //include from orders table
+        //        .ThenInclude(Orders => Orders.OrderItems)
+        //        .ThenInclude(orderItem => orderItem.Item)
+        //        .Select(customer => new CustomerDTOOrderGET
+        //        {
+        //            CustomerName = customer.CustomerName,
+        //            Email = customer.Email,
+        //            PhoneNumber = customer.PhoneNumber,
+        //            Address = customer.Address,
+        //            Orders = customer.Orders.Select(Orders => new OrderDto
+        //            {
+        //                OrderId = Orders.OrderId,
+        //                OrderItems = Orders.OrderItems.Select(OrderItems => OrderItems.Item.ItemName).ToList(),
+        //                OrderStatus = Orders.OrderStatus,
+        //                FinalAmount = Orders.FinalAmount
+        //            }).ToList()
+        //        })//retrieving all rows from DB
+        //            .ToListAsync();
 
 
 
-            return orders;
-        }
+        //    return orders;
+        //}
 
         // PUT: api/Orders/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754

@@ -31,73 +31,71 @@ namespace Spill_The_Beanz_Coffee_Shop_API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CustomerDTORes>>> GetTableReservations()
         {
-            var customersRes = await _context.Customers //using the Customers as the base
-                .Include(customer => customer.TableReservations) //use the tableres property in there
-                .ThenInclude(customerRes => customerRes.Customers)
-                .Select(customer => new CustomerDTORes() { //create new DTO object of customer. so only certain data is seen. 
-
-                    CustomerName = customer.CustomerName,
-                    Email = customer.Email,
-                    PhoneNumber = customer.PhoneNumber,
-                    TableReservations = customer.TableReservations.Select(TableRes => new TableResDTO
-                    {
-                        ReservationId = TableRes.ReservationId,
-                        CustomerId = TableRes.CustomerId,
-                        tableId = TableRes.tableId,
-                        ReservationDate = TableRes.ReservationDate,
-                        start_time = TableRes.start_time,
-                        end_time = TableRes.end_time,
-                        SeatsNumbers = TableRes.SeatsNumbers,
-                        specialRequests = TableRes.specialRequests,
-                        ReservationStatus = TableRes.ReservationStatus
-
-                    }).ToList()
-
-
-                }).ToListAsync();
+            var customersRes = await _context.TableReservations //using the Customers as the base
+            .Include(customer => customer.Customers) //use the tableres property in there
+          //.ThenInclude(customerRes => customerRes.Customers)
+            .Select(customerRes => new CustomerDTORes()
+            { //create new DTO object of customer. so only certain data is seen. 
+                ReservationId = customerRes.ReservationId,
+                CustomerName = customerRes.Customers.CustomerName,
+                Email = customerRes.Customers.Email,
+                PhoneNumber = customerRes.Customers.CustomerName,
+                TableReservations = new List<TableResDTO>
+                { new TableResDTO
+                {
+                    TableId = customerRes.TableId,
+                    ReservationDate = customerRes.ReservationDate,
+                    StartTime = customerRes.StartTime,
+                    EndTime = customerRes.EndTime,
+                    PartySize = customerRes.PartySize,
+                    SpecialRequests = customerRes.SpecialRequests,
+                    ReservationStatus = customerRes.ReservationStatus
+                }
+                }                                 
+            }).ToListAsync();
 
             return Ok(customersRes);
         }
 
         // GET: api/TableReservations/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<TableReservations>> GetTableReservations(int id)
-        {
-            var tableReservations = await _context.TableReservations.FindAsync(id);
+        //[HttpGet("{id}")]
+        //public async Task<ActionResult<List<TableResDTO>>> GetTableReservations(int id)
+        //{
+        //    var tableReservations = await _context.TableReservations.FindAsync(id);
 
-            if (tableReservations == null)
-            {
-                return NotFound();
-            }
+        //    if (tableReservations == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            var customersRes = await _context.Customers //using the Customers as the base
-             .Include(customer => customer.TableReservations) //use the tableres property in there
-             .ThenInclude(customerRes => customerRes.Customers)
-             .Select(customer => new CustomerDTORes()
-             { //create new DTO object of customer. so only certain data is seen. 
+        //    var customersRes = await _context.TableReservations //using the Customers as the base
+        //     .Include(customer => customer.Customers) //use the tableres property in there
+        //     //.ThenInclude(customerRes => customerRes.Customers)
+        //     .Select(customer => new CustomerDTORes()
+        //     { //create new DTO object of customer. so only certain data is seen. 
+        //         ReservationId = customer.ReservationId,
+        //         CustomerName = customer.CustomerName,
+        //         Email = customer.Email,
+        //         PhoneNumber = customer.PhoneNumber,
+        //         TableReservations = customer.TableReservations.Select(TableRes => new TableResDTO
+        //         {
+        //             ReservationId = TableRes.ReservationId,
+        //             CustomerId = TableRes.CustomerId,
+        //             tableId = TableRes.tableId,
+        //             ReservationDate = TableRes.ReservationDate,
+        //             start_time = TableRes.start_time,
+        //             end_time = TableRes.end_time,
+        //             SeatsNumbers = TableRes.SeatsNumbers,
+        //             specialRequests = TableRes.specialRequests,
+        //             ReservationStatus = TableRes.ReservationStatus
 
-                 CustomerName = customer.CustomerName,
-                 Email = customer.Email,
-                 PhoneNumber = customer.PhoneNumber,
-                 TableReservations = customer.TableReservations.Select(TableRes => new TableResDTO
-                 {
-                     ReservationId = TableRes.ReservationId,
-                     CustomerId = TableRes.CustomerId,
-                     tableId = TableRes.tableId,
-                     ReservationDate = TableRes.ReservationDate,
-                     start_time = TableRes.start_time,
-                     end_time = TableRes.end_time,
-                     SeatsNumbers = TableRes.SeatsNumbers,
-                     specialRequests = TableRes.specialRequests,
-                     ReservationStatus = TableRes.ReservationStatus
-
-                 }).ToList()
+        //         }).ToList()
 
 
-             }).ToListAsync();
+        //     }).ToListAsync();
 
-            return Ok(customersRes);
-        }
+        //    return Ok(customersRes);
+        //}
 
         // PUT: api/TableReservations/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754

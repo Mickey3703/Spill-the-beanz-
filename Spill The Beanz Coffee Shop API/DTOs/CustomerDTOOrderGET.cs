@@ -5,6 +5,7 @@ namespace Spill_The_Beanz_Coffee_Shop_API.DTOs
 {
     public class CustomerDTOOrderGET //should have customer id
     {
+        public int OrderId { get; set; }
         public string CustomerName { get; set; }
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
