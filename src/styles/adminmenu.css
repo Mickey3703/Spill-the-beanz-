@@ -1,4 +1,4 @@
-.admin-menu {
+/* .admin-menu {
   padding: 2rem;
   background-color: #f5f2ed;
   min-height: 100vh;
@@ -178,4 +178,80 @@ input[type="file"] {
     margin: 1rem;
     padding: 1.5rem;
   }
+} */
+
+/* ordertbstyle.css */
+
+.orders-page {
+  padding: 2rem;
+  background-color: #f9f6f1;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.orders-page h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #4b2e2e;
+}
+
+.order-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.order-tabs button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  background-color: #e0d7cc;
+  border: none;
+  font-weight: bold;
+  color: #4b2e2e;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-tabs button:hover {
+  background-color: #d3c4b5;
+}
+
+.order-tabs .active {
+  background-color: #7b4b3a;
+  color: white;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-size: 0.95rem;
+}
+
+.orders-table thead {
+  background-color: #4b2e2e;
+  color: white;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.orders-table tbody tr:hover {
+  background-color: #f3f0ea;
+}
+
+.empty-row {
+  text-align: center;
+  font-style: italic;
+  color: #7b4b3a;
+  padding: 2rem;
 }
