@@ -33,7 +33,7 @@ const AddMenuItemForm = ({ onSuccess, onClose }) => {
     if (imageFile) formData.append('image_url', imageFile); // backend image
 
     try {
-      const response = await fetch('/api/menu', { //add API for menu
+      const response = await fetch('http://localhost:5287/api/Menu', { //add POST API for menu
         method: 'POST',
         body: formData,
       });
