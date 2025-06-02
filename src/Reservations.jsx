@@ -9,6 +9,7 @@ const ReservationTable = () => {
     try {
       const response = await fetch(`https://localhost:7264/api/TableReservations`); // add API for reservations
       const data = await response.json();
+      console.log('Fetched reservations:', data);
       setReservations(data);
     } catch (error) {
       console.error('Error fetching reservations:', error);
