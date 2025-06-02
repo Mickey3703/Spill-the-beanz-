@@ -16,7 +16,7 @@ const AdminMenu = () => {
 
   const fetchMenuItems = async () => {
     try {
-      const response = await fetch('/api/menu'); // add API for menu
+      const response = await fetch(`http://localhost:5287/api/Menu`); // add API for menu
       const data = await response.json();
       setMenuItems(data);
       setError(null);
@@ -32,7 +32,7 @@ const AdminMenu = () => {
     if (!window.confirm('Are you sure you want to delete this item?')) return;
 
     try {
-      const response = await fetch(`/api/menu/${itemId}`, { //add API for menu
+      const response = await fetch(`http://localhost:5287/api/Menu/${itemId}`, { //add API for menu
         method: 'DELETE',
       });
 
