@@ -21,7 +21,7 @@ const ReservationTable = () => {
   const updateReservationStatus = async (reservationId, reservationStatus) => { // approve or dismiss reservations
     try {
       const response = await fetch(`https://localhost:7264/api/TableReservations/${reservationId}`, {
-        method: 'PUT',
+        method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ reservationStatus }),
       });
