@@ -19,8 +19,8 @@ const ReservationTable = () => {
  
   const updateReservationStatus = async (reservationId, reservationStatus) => { // approve or dismiss reservations
     try {
-      const response = await fetch(`https://localhost:7264/api/TableReservations${reservationId}`, {
-        method: 'GET',
+      const response = await fetch(`https://localhost:7264/api/TableReservations/${reservationId}`, {
+        method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ reservationStatus }),
       });
@@ -30,6 +30,20 @@ const ReservationTable = () => {
       fetchReservations(); // refresh list after update
     } catch (error) {
       console.error('Error updating reservation status:', error);
+    }
+  };
+
+  const deleteReservation = async (reservationId)  => {
+    try {
+      const response = await fetch (`https://localhost:7264/api/TableReservations/${reservationId}`, {
+        method: 'DELETE',
+      });
+
+      if (!response.ok) throw new Error('Failed to delete reservation');
+
+      fetchReservations();
+    } catch (error) {
+      console.error('Error deleting reservation', error);
     }
   };
 
@@ -80,7 +94,7 @@ const ReservationTable = () => {
                 <td>{table.specialRequests || '—'}</td>
                 <td>{table.reservationStatus || '—'}</td>
                 <td>
-                  {table.reservationStatus === "Pending" && (
+                  {table.reservationStatus === "Pending" ? (
                     <>
                       <button className="action" onClick={() => updateReservationStatus(r.reservationId, "Confirmed")}>
                         Confirm
@@ -88,7 +102,12 @@ const ReservationTable = () => {
                       <button className="action" onClick={() => updateReservationStatus(r.reservationId, "Cancelled")}>
                         Cancel
                       </button>
+                      <button className="action" onClick={() => deleteReservation(r.reservationId)}>
+                        Delete
+                      </button>
                     </>
+                  ) : (
+                    <em>{table.reservationStatus}</em>
                   )}
                 </td>
               </tr>
