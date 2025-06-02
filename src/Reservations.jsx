@@ -45,10 +45,10 @@ const ReservationTable = () => {
     <table className="reservation-table">
       <thead>
         <tr>
-          <th>Reservation</th>
+          <th>Res #</th>
           <th>Customer</th>
           <th>Contact</th>
-          <th>Table</th>
+          <th>Table #</th>
           <th>Date</th>
           <th>From</th>
           <th>Until</th>

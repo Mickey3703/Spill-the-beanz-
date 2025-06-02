@@ -18,6 +18,29 @@ const OrdersTable = ({ endpoint, filterType }) => {
     }
   };
 
+  const handleStatusChange = async (orderId, orderType, newStatus) => {
+    try {
+      const response = await fetch(`${endpoint}/${orderId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type' : 'application/json',
+        },
+        body: JSON.stringify({
+          orderType: orderType,
+          newStatus: newStatus,
+        }),
+      });
+      
+      if (!response.ok) {
+        throw new Error("Failed to update status");
+      }
+
+      fetchOrders();
+      } catch (error) {
+        console.error("Error updating order status", error);
+      }
+  };
+
   useEffect(() => {
     fetchOrders();
     const interval = setInterval(fetchOrders, 5000);
@@ -36,7 +59,17 @@ const OrdersTable = ({ endpoint, filterType }) => {
           <td>{order.email || order.phoneNumber || '—'}</td>
           <td>{new Date(o.orderDate).toLocaleString()}</td>
           <td>{o.specialInstructions || '—'}</td>
-          <td>{o.orderStatus || '—'}</td>
+          {/* <td>{o.orderStatus || '—'}</td>*/}
+          <td>
+            <select value={o.orderStatus} onChange={(e) =>
+              handleStatusChange(order.orderId, o.orderType, e.target.value)
+              }>
+                <option value="Pending">Pending</option>
+                <option value="Completed">Collected</option>
+                <option value="Delivered">Delivered</option>
+                <option value="Cancelled">Cancelled</option>
+            </select>
+          </td>
           <td>{o.finalAmount !== undefined ? `$${parseFloat(o.finalAmount).toFixed(2)}` : '—'}</td>
         </tr>
       ))

@@ -8,6 +8,7 @@ const AdminMenu = () => {
   const [loading, setLoading] = useState(true);
   const [editingItem, setEditingItem] = useState(null);
   const [addingItem, setAddingItem] = useState(false);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     fetchMenuItems();
@@ -18,8 +19,10 @@ const AdminMenu = () => {
       const response = await fetch('/api/menu'); // add API for menu
       const data = await response.json();
       setMenuItems(data);
+      setError(null);
     } catch (error) {
       console.error('Error fetching menu items:', error);
+      setError(error.message);
     } finally {
       setLoading(false);
     }

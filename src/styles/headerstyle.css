@@ -1,4 +1,4 @@
-/* header {
+header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,50 +47,4 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-} */
-
-/* headerstyle.css */
-
-/* headerstyle.css */
-
-/* second option */
-header {
-  background-color: #fdfaf6;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  font-family: 'Segoe UI', sans-serif;
 }
-
-.header-left,
-.header-right {
-  display: flex;
-  gap: 1rem;
-}
-
-.header-logo img {
-  height: 200px;
-  object-fit: contain;
-}
-
-header button {
-  background-color: #e0d7cc;
-  color: #4b2e2e;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 999px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-header button:hover {
-  background-color: #c7b7a4;
-  color: white;
-}
-
