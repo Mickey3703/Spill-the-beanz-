@@ -122,52 +122,90 @@
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Modal Form Container */
 .add-menu-form,
 .edit-menu-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.add-menu-form input,
-.edit-menu-form input,
+/* Heading */
+.add-menu-form h2,
+.edit-menu-form h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #3e2723;
+  text-align: center;
+}
+
+/* Inputs and Textareas */
+.add-menu-form input[type="text"],
+.edit-menu-form input[type="text"],
+.add-menu-form input[type="number"],
+.edit-menu-form input[type="number"],
 .add-menu-form textarea,
-.edit-menu-form textarea {
-  padding: 0.75rem;
+.edit-menu-form textarea,
+.add-menu-form input[type="file"],
+.edit-menu-form input[type="file"] {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  border: 1px solid #ccc;
   font-size: 1rem;
-  resize: vertical;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease;
 }
 
-input[type="file"] {
-  margin-top: 0.5rem;
+.add-menu-form input:focus,
+.edit-menu-form input:focus,
+.add-menu-form textarea:focus,
+.edit-menu-form textarea:focus {
+  border-color: #ecc999;
+  outline: none;
 }
 
+/* Buttons */
 .add-menu-form button,
 .edit-menu-form button {
-  background-color: #5c3d2e;
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+  padding: 0.75rem 1rem;
   font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-.add-menu-form button:hover,
-.edit-menu-form button:hover {
-  background-color: #432c1e;
+.add-menu-form button[type="submit"],
+.edit-menu-form button[type="submit"] {
+  background-color: #ecc999;
+  color: #3e2723;
 }
 
+.add-menu-form button[type="submit"]:hover,
+.edit-menu-form button[type="submit"]:hover {
+  background-color: #e0b87d;
+}
+
+.add-menu-form button[type="button"],
 .edit-menu-form button[type="button"] {
-  background-color: #999;
+  background-color: #f5f5f5;
+  color: #555;
   margin-top: -0.5rem;
 }
 
+.add-menu-form button[type="button"]:hover,
 .edit-menu-form button[type="button"]:hover {
-  background-color: #777;
+  background-color: #e0e0e0;
 }
+
 
 @media (max-width: 600px) {
   .menu-grid {
