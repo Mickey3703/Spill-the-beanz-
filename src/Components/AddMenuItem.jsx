@@ -1,14 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import '../styles/adminmenu.css';
 
-const AddMenuItemForm = ({ onSuccess, onClose }) => {
+const MenuItemForm = ({ initialData, onSuccess, onClose }) => {
   const [form, setForm] = useState({
-    item_name: '',
+    itemName: '',
     category: '',
     description: '',
     price: '',
+    isFeatured: false,
   });
 
   const [imageFile, setImageFile] = useState(null);
+
+  useEffect(() => {
+    if (initialData) {
+      setForm({
+        itemName: initialData.itemName || '',
+        category: initialData.category || '',
+        description: initialData.description || '',
+        price: initialData.price || '',
+        isFeatured: initialData.isFeatured || false,
+      });
+    }
+  }, [initialData]);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -25,36 +39,48 @@ const AddMenuItemForm = ({ onSuccess, onClose }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData();
-    
-    formData.append('item_name', form.item_name);
-    formData.append('category', form.category);
-    formData.append('description', form.description);
-    formData.append('price', form.price);
-    if (imageFile) formData.append('image_url', imageFile); // backend image
+
+    formData.append('ItemName', form.itemName);
+    formData.append('Category', form.category);
+    formData.append('Description', form.description);
+    formData.append('Price', form.price);
+    formData.append('IsFeatured', form.isFeatured);
+    if (imageFile) formData.append('image_url', imageFile);
 
     try {
-      const response = await fetch('http://localhost:5287/api/Menu', { //add POST API for menu
-        method: 'POST',
+      const url = initialData
+        ? `http://localhost:5287/api/Menu/${initialData.id}`
+        : 'http://localhost:5287/api/Menu';
+
+      const method = initialData ? 'PUT' : 'POST';
+
+      const response = await fetch(url, {
+        method,
         body: formData,
       });
 
-      if (!response.ok) throw new Error('Failed to add item');
+      if (!response.ok) {
+        const errText = await response.text();
+        throw new Error(errText || 'Failed to submit');
+      }
+
       if (onSuccess) onSuccess();
       if (onClose) onClose();
-      alert('Item added successfully!');
+      alert(`Item ${initialData ? 'updated' : 'added'} successfully!`);
     } catch (error) {
-      console.error('Error adding item:', error);
+      console.error('Error submitting item:', error);
+      alert(`Error: ${error.message}`);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="add-menu-form">
-        <h2>Add New Item</h2>
+    <form onSubmit={handleSubmit} className="edit-menu-form">
+      <h2>{initialData ? 'Edit' : 'Add'} Menu Item</h2>
       <input
         type="text"
-        name="item_name"
+        name="itemName"
         placeholder="Item Name"
-        value={form.item_name}
+        value={form.itemName}
         onChange={handleChange}
         required
       />
@@ -82,15 +108,23 @@ const AddMenuItemForm = ({ onSuccess, onClose }) => {
         onChange={handleChange}
         required
       />
+      <label>
+        <input
+          type="checkbox"
+          name="isFeatured"
+          checked={form.isFeatured}
+          onChange={handleChange}
+        /> Featured Item
+      </label>
       <input
         type="file"
-        accept="image/*" // backend img
+        accept="image/*"
         onChange={handleImageChange}
       />
-      <button type="submit">Add Menu Item</button>
+      <button type="submit">{initialData ? 'Update' : 'Add'} Menu Item</button>
       <button type="button" onClick={onClose}>Cancel</button>
     </form>
   );
 };
 
-export default AddMenuItemForm;
+export default MenuItemForm;

@@ -63,16 +63,16 @@ const AdminMenu = () => {
 
       <div className="menu-grid">
         {menuItems.map(item => (
-          <div key={item.item_id} className="menu-card">
-            <img src={item.image_url} alt={item.item_name} className="menu-img" />
-            <h3>{item.item_name}</h3>
+          <div key={item.itemId} className="menu-card">
+            <img src={`http://localhost:5287${item.image_url}`} alt={item.itemName} className="menu-img" />
+            <h3>{item.itemName}</h3>
             <p><strong>Category:</strong> {item.category}</p>
             <p>{item.description}</p>
-            <p><strong>Price:</strong> ${parseFloat(item.price).toFixed(2)}</p>
+            <p><strong>Price:</strong> R{parseFloat(item.price).toFixed(2)}</p>
 
             <div className="menu-actions">
               <button onClick={() => handleEdit(item)} className="edit-btn">Edit</button>
-              <button onClick={() => handleDelete(item.item_id)} className="delete-btn">Delete</button>
+              <button onClick={() => handleDelete(item.itemId)} className="delete-btn">Delete</button>
             </div>
           </div>
         ))}

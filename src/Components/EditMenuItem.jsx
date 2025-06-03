@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+import '../styles/adminmenu.css';
+
 
 const EditMenuItemForm = ({ item, onClose, onSuccess }) => {
   const [form, setForm] = useState({
-    item_name: item.item_name || '',
+    itemName: item.itemName || '',
     category: item.category || '',
     description: item.description || '',
     price: item.price || '',
+    isFeatured: item.isFeatured || false
   });
 
   const [imageFile, setImageFile] = useState(null);
@@ -26,16 +29,17 @@ const EditMenuItemForm = ({ item, onClose, onSuccess }) => {
     e.preventDefault();
 
     const formData = new FormData();
-    formData.append('item_name', form.item_name);
-    formData.append('category', form.category);
-    formData.append('description', form.description);
-    formData.append('price', form.price);
-    if (imageFile) formData.append('image_url', imageFile); //backend image
+    formData.append('ItemName', form.itemName);
+    formData.append('Category', form.category);
+    formData.append('Description', form.description);
+    formData.append('Price', form.price);
+    if (imageFile) formData.append('imageUrl', imageFile); //backend image
+    formData.append('IsFeatured', form.isFeatured || false);
 
     try {
-      const response = await fetch(`http://localhost:5287/api/Menu/${item.item_id}`, { //add PUT API for menu
+      const response = await fetch(`http://localhost:5287/api/Menu/${item.itemId}`, { //add PUT API for menu
         method: 'PUT', 
-        body: formData
+        body: formData,
       });
 
       if (!response.ok) throw new Error('Failed to update item');
@@ -53,8 +57,8 @@ const EditMenuItemForm = ({ item, onClose, onSuccess }) => {
       <h2>Edit Item</h2>
       <input
         type="text"
-        name="item_name"
-        value={form.item_name}
+        name="itemName"
+        value={form.itemName}
         onChange={handleChange}
         required
       />
@@ -79,6 +83,15 @@ const EditMenuItemForm = ({ item, onClose, onSuccess }) => {
         onChange={handleChange}
         required
       />
+      <label>
+      <input
+        type="checkbox"
+        name="isFeatured"
+        checked={form.isFeatured}
+        onChange={handleChange}
+      />
+      Featured Item
+      </label>
       <input type="file" accept="image/*" onChange={handleImageChange} />
       <button type="submit">Update Item</button>
       <button type="button" onClick={onClose}>Cancel</button>
