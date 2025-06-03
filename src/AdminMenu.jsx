@@ -64,7 +64,7 @@ const AdminMenu = () => {
       <div className="menu-grid">
         {menuItems.map(item => (
           <div key={item.itemId} className="menu-card">
-            <img src={`http://localhost:5287${item.image_url}`} alt={item.itemName} className="menu-img" />
+            <img src={`http://localhost:5287${item.imageUrl}`} alt={item.itemName} className="menu-img" />
             <h3>{item.itemName}</h3>
             <p><strong>Category:</strong> {item.category}</p>
             <p>{item.description}</p>
