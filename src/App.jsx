@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import LoginForm from './LoginForm';
+import AuthForm from './AuthenticationForm';
 import AdminOrders from './Orders';
 import AdminReservations from './Reservations';
 import Header from './Components/Header';
@@ -12,7 +12,7 @@ function App () {
       <Header />
 
       <Routes>
-        <Route path="/" element={<LoginForm />} />
+        <Route path="/auth" element={<AuthForm />} />
         <Route path="/Orders" element={<AdminOrders />} />
         <Route path="/Reservations" element={<AdminReservations />} />
         <Route path="/AdminMenu" element={<AdminMenu />} />

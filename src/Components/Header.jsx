@@ -9,7 +9,7 @@ function Header() {
   return (
     <header>
       <div className="header-left">
-        <button onClick={() => navigate('/')}>Home</button>
+        <button onClick={() => navigate('/auth')}>Profile</button>
         <button onClick={() => navigate('/AdminMenu')}>Admin Menu</button>
       </div>
 

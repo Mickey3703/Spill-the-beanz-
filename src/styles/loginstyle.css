@@ -15,7 +15,7 @@ body {
   background-color: #fff8f1;
   padding: 40px 30px;
   border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 360px;
 }
@@ -31,6 +31,7 @@ body {
   margin-bottom: 10px;
 }
 
+/* Input and Select Styling */
 .input-box {
   display: flex;
   align-items: center;
@@ -49,12 +50,47 @@ body {
   font-size: 20px;
 }
 
-.input-box input {
+.input-box input,
+.input-box select {
   border: none;
   outline: none;
   font-size: 16px;
   flex: 1;
   background-color: transparent;
+  color: #4b2e2e;
+}
+
+.input-box select {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  flex: 1;
+  background-color: transparent;
+  color: #4b2e2e;
+  padding-right: 24px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg width='12' height='8' viewBox='0 0 12 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 8L0 0h12L6 8z' fill='%236b4c3b'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px 8px;
+  cursor: pointer;
+}
+
+
+/* Promo and Checkboxes */
+.signup-promo {
+  background-color: #ecd3af;
+  color: #4b2e2e;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.signup-promo h4 {
+  margin: 0;
+  font-size: 16px;
 }
 
 .checkbox-container {
@@ -70,6 +106,7 @@ body {
   margin-right: 8px;
 }
 
+/* Submit and Switch Buttons */
 button[type="submit"] {
   background-color: #4b2e2e;
   color: white;
@@ -79,56 +116,53 @@ button[type="submit"] {
   border-radius: 8px;
   cursor: pointer;
   margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
   background-color: #3a201f;
 }
 
-.signup-promo {
-  background-color: #ecd3af;
-  color: #4b2e2e;
-  padding: 10px;
-  border-radius: 8px;
-  margin: 15px 0;
+.toggle-auth {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #6b4c3b;
 }
 
-.signup-promo h4 {
-  margin: 0;
-  font-size: 16px;
-}
-
-.link-button {
-  margin-left: 8px;
-  background-color: #ecd3af;
+.toggle-auth button {
+  background-color: transparent;
   border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
+  color: #4b2e2e;
+  font-weight: bold;
   cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  margin-left: 5px;
 }
 
-.link-button:hover {
-  background-color: #e6b063;
+.toggle-auth button:hover {
+  color: #3a201f;
 }
 
+/* Mobile Responsive */
 @media (max-width: 480px) {
   .auth-container {
     width: 90%;
     padding: 30px 20px;
   }
-  
+
   .form h2 {
     font-size: 28px;
   }
-  
+
   .input-box {
     height: 42px;
   }
-  
+
   .checkbox-container {
     font-size: 12px;
   }
-  
+
   button[type="submit"] {
     font-size: 16px;
     padding: 10px;
