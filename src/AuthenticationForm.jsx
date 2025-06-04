@@ -3,6 +3,8 @@ import { FaUser } from 'react-icons/fa';
 import { IoIosLock } from 'react-icons/io';
 import { IoMdMail } from 'react-icons/io';
 import { useNavigate } from 'react-router-dom';
+import { FaPhone } from "react-icons/fa6";
+import { FaHouseChimney } from "react-icons/fa6";
 import './styles/loginstyle.css';
 
 const AuthForm = () => {
@@ -142,6 +144,7 @@ const AuthForm = () => {
               {registerData.role === 'Customer' && (
                 <>
                   <div className="input-box">
+                    <FaPhone />
                     <input
                       type="text"
                       name="phone_number"
@@ -152,6 +155,7 @@ const AuthForm = () => {
                     />
                   </div>
                   <div className="input-box">
+                    <FaHouseChimney />
                     <input
                       type="text"
                       name="address"

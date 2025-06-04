@@ -4,7 +4,7 @@ import './styles/ordertbstyle.css';
 const ReservationTable = () => {
   const [reservations, setReservations] = useState([]);
   const [loading, setLoading] = useState(true);
-
+ 
   const fetchReservations = async () => {
     try {
       const response = await fetch(`https://localhost:7264/api/TableReservations`); // add API for reservations
@@ -25,37 +25,37 @@ const ReservationTable = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ reservationStatus }),
       });
-
+ 
       if (!response.ok) throw new Error('Failed to update reservation');
-
+ 
       fetchReservations(); // refresh list after update
     } catch (error) {
       console.error('Error updating reservation status:', error);
     }
   };
-
+ 
   const deleteReservation = async (reservationId)  => {
     try {
       const response = await fetch (`https://localhost:7264/api/TableReservations/${reservationId}`, {
         method: 'DELETE',
       });
-
+ 
       if (!response.ok) throw new Error('Failed to delete reservation');
-
+ 
       fetchReservations();
     } catch (error) {
       console.error('Error deleting reservation', error);
     }
   };
-
+ 
   useEffect (() => {
     fetchReservations();
     const interval = setInterval(fetchReservations, 5000);
     return () => clearInterval(interval);
   }, []);
-
+ 
   if (loading) return <p>Loading reservations...</p>;
-
+ 
   return (
     <table className="reservation-table">
       <thead>
